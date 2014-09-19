@@ -1,0 +1,151 @@
+% This is LLNCS.DEM the demonstration file of
+% the LaTeX macro package from Springer-Verlag
+% for Lecture Notes in Computer Science,
+% version 2.4 for LaTeX2e as of 16. April 2010
+%
+\documentclass{llncs}
+
+\usepackage[utf8]{inputenc}
+
+% URL handling
+\usepackage{url}
+\urlstyle{same}
+
+% Todos
+%\usepackage[colorinlistoftodos]{todonotes}
+%\newcommand{\ke}[1]{\todo[size=\small, color=orange!40]{\textbf{Kai:} #1}}
+%\newcommand{\tb}[1]{\todo[size=\small, color=green!40]{\textbf{Thomas:} #1}}
+
+
+%\usepackage{makeidx}  % allows for indexgeneration
+
+%\usepackage{amsmath}
+\usepackage{amsmath, amssymb}
+\usepackage{mathabx}
+
+% monospace within text
+\newcommand{\ms}[1]{\texttt{#1}}
+
+% examples
+\usepackage{fancyvrb}
+\DefineVerbatimEnvironment{ex}{Verbatim}{numbers=left,numbersep=2mm,frame=single,fontsize=\scriptsize}
+
+\usepackage{xspace}
+% Einfache und doppelte Anfuehrungszeichen
+\newcommand{\qs}{``} 
+\newcommand{\qe}{''\xspace} 
+\newcommand{\sqs}{`} 
+\newcommand{\sqe}{'\xspace} 
+
+% checkmark
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+% Xs
+\usepackage{pifont}
+
+% Tabellenabstände kleiner
+\setlength{\intextsep}{10pt} % Vertical space above & below [h] floats
+\setlength{\textfloatsep}{10pt} % Vertical space below (above) [t] ([b]) floats
+% \setlength{\abovecaptionskip}{0pt}
+% \setlength{\belowcaptionskip}{0pt}
+
+\usepackage{tabularx}
+\newcommand{\hr}{\hline\noalign{\smallskip}} % für die horizontalen linien in tabellen
+
+% Todos
+\usepackage[colorinlistoftodos]{todonotes}
+\newcommand{\ke}[1]{\todo[size=\small, color=orange!40]{\textbf{Kai:} #1}}
+\newcommand{\tb}[1]{\todo[size=\small, color=green!40]{\textbf{Thomas:} #1}}
+
+
+
+\begin{document}
+
+%
+%
+\title{XXXXX}
+%
+\titlerunning{XXXXX}  % abbreviated title (for running head)
+%                                     also used for the TOC unless
+%                                     \toctitle is used
+%
+\author{XXXXX\inst{1} \and XXXXX\inst{2}}
+%
+\authorrunning{XXXXX} % abbreviated author list (for running head)
+%
+%%%% list of authors for the TOC (use if author list has to be modified)
+\institute{XXXXX\\
+\email{XXXXX},\\ 
+\and
+XXXXX \\
+\email{XXXXX} 
+}
+
+\maketitle              % typeset the title of the contribution
+
+\begin{abstract}
+
+
+\keywords{..}
+\end{abstract}
+%
+
+\section{Introduction}
+
+
+
+\section{Idea}
+
+
+
+\begin{itemize}
+	\item sind alle constraints abgedeckt?
+	\item kann man alle constraints in SPARQL definieren?
+	\item sind alle constraints mit Logik ausdrückbar?
+	\item vollständig mit Reasoning | OW
+	\item vollständig ohne Reasoning | CW
+	\item es gibt keinen query rewriting mechanismus für OWL 2, nur für OWL-QL
+	\item constraints in einer anderen constraint language definieren wenn constraints nicht in OWL beschrieben werden können
+	\item durch reasoning entstehen Probleme, auf die man nicht gekommen wäre --> sofort nachvollziehbar
+	\item zeigen, dass OWL-QL und constraint language einer konkreten Domäne zusammen vollständig sind
+	\item System entwickeln, das effizient ist / Experimente
+\end{itemize}
+
+-----
+
+Nehmen wir nun an, dass dein Framework welches entsprechende SPARQL Queries generiert diese auf einem SPARQL Endpoint evaluiert der zu der vorliegenden Ontologie bzw. des darin verwendeten OWL 2 Profils das entsprechende Entailment Regime realisiert, wären die zurückgegebenen Resultsets vollständig. Wie das Entailment Regime im Endpoint realisiert ist, also durch Query Rewriting oder durch Vervollständigung der ABox, ist dabei irrelevant.
+
+Wie allerdings bspw. in 
+\url{https://www.uni-ulm.de/fileadmin/website_uni_ulm/iui.inst.090/Lehre/WS_2011-2012/SemWebGrundlagen/LectureNotes.pdf}
+auf Seite 51 veranschaulicht, ist die Komplexität des Reasoning abhängig von der zugrunde gelegten Sprache und kann daher nur in bestimmten Fällen effizient durchgeführt werden. Wie in unserem letzten Paper beschrieben zielt unter anderem die Definition von DL-Lite gerade darauf ab Reasoning Aufgaben und Query Answering effizient zu ermöglichen und ist Grundlage des OWL 2 QL Profils. Nun ist allgemein bekannt, dass die logische Konsistenz für diese Art von Sprachen effizient geprüft werden kann. 
+
+Allerding wäre wie bspw. in 
+\url{http://www.aifb.kit.edu/images/d/d2/2005_925_Haase_Consistent_Evol_1.pdf} beschrieben auch eine sogenannte 'User-defined Consistency' denkbar. Genau an dieser Stelle könnten wir ansetzen.
+
+\section{research questions}
+
+\begin{itemize}
+	\item for which RDF validation requirement the expressivity of DL-LiteA respectively OWL 2 QL is sufficient?
+	\item for which RDF validation requirement additional constraint languages are needed?
+	\item which constraint languages are suitable to express remaining requirements?
+	\item what are the effects of these constraints regarding complexity?
+\end{itemize}
+
+\section{Related Work}
+
+
+
+\section{Evaluation}
+
+evaluation using practical data set
+
+\section{Conclusion and Future Work}
+
+
+
+\bibliography{literatur}{}
+\bibliographystyle{plain}
+\setcounter{tocdepth}{1}
+%\listoftodos
+\end{document}
