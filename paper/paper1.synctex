@@ -1,6 +1,6 @@
 SyncTeX Version:1
-Input:1:C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constraints\RDF Validation with OWL 2 QL.tex
-Input:2:C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constraints\llncs.cls
+Input:1:C:\Daten\Git\rdf-validation-research\paper\paper1.tex
+Input:2:C:\Daten\Git\rdf-validation-research\paper\llncs.cls
 Input:3:C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls
 Input:4:C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo
 Input:5:C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty
@@ -108,7 +108,7 @@ Input:106:C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
 Input:107:C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex
 Input:108:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositioning.code.tex
 Input:109:C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty
-Input:110:C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constraints\RDF Validation with OWL 2 QL.aux
+Input:110:C:\Daten\Git\rdf-validation-research\paper\paper1.aux
 Input:111:C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii
 Input:112:C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
 Input:113:C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
@@ -118,7 +118,7 @@ Unit:1
 X Offset:0
 Y Offset:0
 Content:
-!8930
+!8775
 {1
 [1,126:4736286,45574276:26877856,40837990,0
 h1,126:4736286,4736286:0,0,0
@@ -1175,8 +1175,8 @@ h1,126:8865054,45574276:22749088,0,0
 ]
 !26949
 }1
-Input:114:C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constraints\RDF Validation with OWL 2 QL.bbl
-!133
+Input:114:C:\Daten\Git\rdf-validation-research\paper\paper1.bbl
+!74
 {2
 [1,151:4736286,45574276:26877856,40837990,0
 h1,151:4736286,4736286:0,0,0
@@ -1671,11 +1671,11 @@ h1,151:8865054,45574276:22749088,0,0
 )
 ]
 ]
-!12305
+!12304
 }2
-Input:115:C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constraints\RDF Validation with OWL 2 QL.aux
-!133
+Input:115:C:\Daten\Git\rdf-validation-research\paper\paper1.aux
+!74
 Postamble:
 Count:830
-!26
+!25
 Post scriptum:

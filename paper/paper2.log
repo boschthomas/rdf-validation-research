@@ -1,9 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  19 SEP 2014 15:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  19 SEP 2014 16:52
 entering extended mode
-**RDF*Validation*with*OWL*2*QL.tex
-
-("C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constrain
-ts\RDF Validation with OWL 2 QL.tex"
+**paper2.tex
+(C:\Daten\Git\rdf-validation-research\paper\paper2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -15,9 +13,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-
-("C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constrain
-ts\llncs.cls"
+(C:\Daten\Git\rdf-validation-research\paper\llncs.cls
 Document Class: llncs 2013/09/27 v2.18 
  LaTeX document class for Lecture Notes in Computer Science
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -1120,8 +1116,7 @@ LaTeX Info: Redefining \addtolength on input line 77.
 )
 \c@@todonotes@numberoftodonotes=\count160
 )
-("C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constrain
-ts\RDF Validation with OWL 2 QL.aux")
+(C:\Daten\Git\rdf-validation-research\paper\paper2.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
@@ -1134,7 +1129,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
- ABD: EveryShipout initializing macros
+
+ABD: EveryShipout initializing macros
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count161
@@ -1157,66 +1153,340 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 85.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (1.26477pt too wide) in paragraph at lines 117--118
-\OT1/cmr/m/n/10 liegen-den On-tolo-gie bzw. des darin ver-wen-de-ten OWL 2 Pro-
-fils das entsprechende
+) [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4] [5]
+Overfull \hbox (0.68265pt too wide) in paragraph at lines 432--438
+\OT1/cmr/m/n/10 and al-ready ex-ist in triple for-mat. De-vel-op-ers would end 
+up us-ing a Turtle/JSON-
+ []
+
+[6] [7] [8] [9] [10] [11]
+Underfull \vbox (badness 1694) has occurred while \output is active []
+
+ [12]
+[13]
+! Misplaced alignment tab character &.
+<argument> Why OWL &
+                     SPARQL for RDF validation?
+l.822 ...tbf{Why OWL & SPARQL for RDF validation?}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.825 	\item OWL &
+                   SPARQL are sufficient for validation in a CWA
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (30.34947pt too wide) in paragraph at lines 863--864
+[]\OT1/cmr/m/n/10 http://composing-the-semantic-web.blogspot.com.au/2010/04/whe
+re-owl-fails.html 
+ []
+
+[14]
+! Misplaced alignment tab character &.
+l.934 	Clark &
+               Parsia had previously proposed the ICV semantics for OWL, but...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[15] [16] [17] [18]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1109 [1] http://svn.aksw.org/papers/2014/WWW_
+                                               Databugger/public.pdf
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1110 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (126.18501pt too wide) in paragraph at lines 1108--1110
+\OT1/cmr/m/n/10 we ac-tu-ally came to the same con-clu-sions. [1] http://svn.ak
+sw.org/papers/2014/WWW$[]\OML/cmm/m/it/10 atabugger\U/matha/m/n/10 {\OML/cmm/m/
+it/10 public:pdf$ 
  []
 
 
-Overfull \hbox (0.82713pt too wide) in paragraph at lines 119--122
-[]\OT1/cmr/m/n/10 Wie allerd-ings bspw. in $https : / / www . uni-[]ulm . de / 
-leadmin / website[]uni[]ulm /
+! Package inputenc Error: Unicode char \u8:→ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1118 NO →
+              to not break existing tools like Protege which knew how to man...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:→ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1119 YES →
+               avoid confusion
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[19] [20] [21]
+Overfull \hbox (7.2095pt too wide) in paragraph at lines 1251--1257
+\OT1/cmr/m/n/10 defini-tive on-tol-ogy for that vo-cab-u-lary. That's why I wro
+te "vo-cab-u-lary/ontology",
  []
 
 
-Overfull \hbox (12.46338pt too wide) in paragraph at lines 119--122
-\OT1/cmr/m/n/10 iui . inst . 090 / Lehre / WS[]2011-[]2012 / SemWebGrundlagen /
- LectureNotes . pdf$ auf Seite
+Overfull \hbox (12.87712pt too wide) in paragraph at lines 1277--1282
+[]\OT1/cmr/m/n/10 foaf:Person owl:subClassOf [ a owl:Restriction; owl:cardinali
+ty 1; owl:onProperty
  []
 
+[22]
+Runaway argument?
+ 
+! Paragraph ended before \align* was complete.
+<to be read again> 
+                   \par 
+l.1327 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-Overfull \hbox (0.52162pt too wide) in paragraph at lines 123--125
-[]\OT1/cmr/m/n/10 Allerding ware wie bspw. in $http : / / www . aifb . kit . e
-du / images / d / d2 / 2005[]925[]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1327 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.1327 
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.1327 
+       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1328 (1) \exists
+                   teachesStudent.\top \sqsubseteq TeacherUniversity
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1329 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1330 (2) TeacherUniversity \sqsubseteq
+                                         EmployeeUniversity
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1331 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1332 (3) EmployeeUniversity \sqsubseteq
+                                          \neg EmployeeCompany
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1333 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1342 (7) + (3) = (8) \neg
+                            EmployeeCompany(eckert)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced \cr.
+\math@cr@@@ ->\cr 
+                  
+l.1343 \end{align*}
+                   
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \noalign.
+\math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
+                                                  {\vskip #1\relax }
+l.1343 \end{align*}
+                   
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1343 \end{align*}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1343 \end{align*}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\math@cr@@ ...th@cr@@@ \noalign {\vskip #1\relax }
+                                                  
+l.1343 \end{align*}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced \noalign.
+\black@ #1->\noalign 
+                     {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
+l.1343 \end{align*}
+                   
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Extra }, or forgotten \endgroup.
+\endalign ->\math@cr \black@ \totwidth@ \egroup 
+                                                \ifingather@ \restorealignst...
+l.1343 \end{align*}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1343 \end{align*}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.1343 \end{align*}
+                   
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+[23]
+Overfull \hbox (69.8494pt too wide) in paragraph at lines 1375--1376
+[]\OT1/cmr/m/n/10 See e.g. chap-ter 6 of Jiao Tao's dis-ser-ta-tion - http://tw
+.rpi.edu/web/doc/JiaoTaoDissertation
  []
 
-
-Overfull \hbox (6.09372pt too wide) in paragraph at lines 123--125
-\OT1/cmr/m/n/10 Haase[]Consistent[]Evol[]1 . pdf$ beschrieben auch eine so-ge-n
-an-nte 'User-defined Con-
- []
-
-[1
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-("C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constrain
-ts\RDF Validation with OWL 2 QL.bbl"
+(C:\Daten\Git\rdf-validation-research\paper\paper2.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [2]
-("C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constrain
-ts\RDF Validation with OWL 2 QL.aux") ) 
+) [24] (C:\Daten\Git\rdf-validation-research\paper\paper2.aux) ) 
 Here is how much of TeX's memory you used:
- 13923 strings out of 493921
- 263317 string characters out of 3147262
- 300799 words of memory out of 3000000
- 16915 multiletter control sequences out of 15000+200000
- 16356 words of font info for 58 fonts, out of 3000000 for 9000
+ 13997 strings out of 493921
+ 264315 string characters out of 3147262
+ 304959 words of memory out of 3000000
+ 16987 multiletter control sequences out of 15000+200000
+ 16692 words of font info for 60 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 55i,5n,54p,551b,203s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on "RDF Validation with OWL 2 QL.pdf" (2 pages, 90923 bytes).
+ 55i,9n,76p,729b,699s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Thom
+as Bosch\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\mathb10
+.pk> <C:\Users\Thomas Bosch\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mat
+habx\dpi600\matha10.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
+12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on paper2.pdf (24 pages, 244009 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
+ 149 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,6 @@
 SyncTeX Version:1
-Input:1:C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constraints\OWL2 Validation.tex
-Input:2:C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constraints\llncs.cls
+Input:1:C:\Daten\Git\rdf-validation-research\paper\paper2.tex
+Input:2:C:\Daten\Git\rdf-validation-research\paper\llncs.cls
 Input:3:C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls
 Input:4:C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo
 Input:5:C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty
@@ -108,7 +108,7 @@ Input:106:C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
 Input:107:C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex
 Input:108:C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositioning.code.tex
 Input:109:C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty
-Input:110:C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constraints\OWL2 Validation.aux
+Input:110:C:\Daten\Git\rdf-validation-research\paper\paper2.aux
 Input:111:C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii
 Input:112:C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
 Input:113:C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
@@ -118,7 +118,7 @@ Unit:1
 X Offset:0
 Y Offset:0
 Content:
-!8904
+!8775
 {1
 [1,139:4736286,45574276:26877856,40837990,0
 h1,139:4736286,4736286:0,0,0
@@ -29699,8 +29699,8 @@ h1,1366:8865054,45574276:22749088,0,0
 ]
 !31277
 }23
-Input:114:C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constraints\OWL2 Validation.bbl
-!121
+Input:114:C:\Daten\Git\rdf-validation-research\paper\paper2.bbl
+!75
 {24
 [1,1394:4736286,45574276:26877856,40837990,0
 h1,1394:4736286,4736286:0,0,0
@@ -30226,11 +30226,11 @@ h1,1394:8865054,45574276:22749088,0,0
 )
 ]
 ]
-!14205
+!14204
 }24
-Input:115:C:\Users\Thomas Bosch\Dropbox\Diss\ISWC 2014\thomas\bosch-iswc-2014-constraints\OWL2 Validation.aux
-!121
+Input:115:C:\Daten\Git\rdf-validation-research\paper\paper2.aux
+!75
 Postamble:
 Count:17061
-!28
+!27
 Post scriptum:
