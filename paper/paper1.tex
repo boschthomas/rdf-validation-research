@@ -132,6 +132,53 @@ Allerding wäre wie bspw. in
 	\item what are the effects of these constraints regarding complexity?
 \end{itemize}
 
+\section{Requirements Not Expressible By OWL 2 QL}
+
+\subsection{Class-Specific Disjoint Group of Properties}
+
+requirements DB:
+\begin{itemize}
+  \item ID: R-13-DISJOINT-GROUP-OF-PROPERTIES-CLASS-SPECIFIC
+	\item URL: \url{http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/20}
+\end{itemize}
+
+A \textless Human\textgreater has either a name or at least 1 given name and 1 family name.
+
+constraint (ShEx):
+
+\begin{ex}
+<Human> {                           
+    (                                    
+            foaf:name xsd:string              
+        |                                   
+            foaf:givenName xsd:string+,      
+            foaf:familyName xsd:string
+    )
+}
+\end{ex}
+
+valid data (ShEx):
+
+\begin{ex}
+<Anakin>
+    foaf:givenName "Anakin" ;
+    foaf:familyName "Skywalker" .
+\end{ex}
+
+\begin{ex}
+<Anakin>
+    foaf:name "Anakin Skywalker" .
+\end{ex}
+
+invalid data (ShEx):
+
+\begin{ex}
+<Anakin>
+    foaf:givenName "Anakin" ;
+    foaf:familyName "Skywalker" ;
+    foaf:name "Anakin Skywalker" .
+\end{ex}
+
 \section{Related Work}
 
 
