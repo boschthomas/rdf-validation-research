@@ -144,66 +144,7 @@ OWL 2 profiles specification: \cite{owl2profiles2008}
 \textbf{Logical Underpinning for OWL 2 QL.}
 OWL 2 QL is based on the DL-Lite family of description logics. Several variants of DL-Lite have been described in the literature, and DL-Lite$_R$ provides the logical underpinning for OWL 2 QL. DL-Lite$_R$ does not require the unique name assumption (UNA), since making this assumption would have no impact on the semantic consequences of a DL-Lite$_R$ ontology. More expressive variants of DL-Lite, such as DL-Lite$_A$, extend DL-Lite$_R$ with functional properties, and these can also be extended with keys; however, for query answering to remain in LOGSPACE, these extensions require UNA and need to impose certain global restrictions on the interaction between properties used in different types of axiom. Basing OWL 2 QL on DL-Lite$_R$ avoids practical problems involved in the explicit axiomatization of UNA \cite{owl2profiles2008}. 
 
-\subsection{allowed usage of constructs in class expressions}
-
-\textbf{Subclass Expressions}
-
-\begin{itemize}
-	\item class
-  \item ObjectSomeValuesFrom (where the class is limited to owl:Thing)
-  \item DataSomeValuesFrom
-\end{itemize}
-
-\textbf{Superclass Expressions}
-
-\begin{itemize}
-	\item class
-  \item ObjectIntersectionOf
-  \item ObjectComplementOf
-  \item ObjectSomeValuesFrom
-  \item DataSomeValuesFrom
-\end{itemize}
- 
-\subsection{supported constructs in OWL 2 QL}
-
-\begin{itemize}
-	\item subclass axioms (SubClassOf)
-  \item class expression equivalence (EquivalentClasses)
-  \item class expression disjointness (DisjointClasses)
-  \item inverse object properties (InverseObjectProperties)
-  \item property inclusion (SubObjectPropertyOf not involving property chains and SubDataPropertyOf)
-  \item property equivalence (EquivalentObjectProperties and EquivalentDataProperties)
-  \item property domain (ObjectPropertyDomain and DataPropertyDomain)
-  \item property range (ObjectPropertyRange and DataPropertyRange)
-  \item disjoint properties (DisjointObjectProperties and DisjointDataProperties)
-  \item symmetric properties (SymmetricObjectProperty)
-  \item reflexive properties (ReflexiveObjectProperty)
-  \item irreflexive properties (IrreflexiveObjectProperty)
-  \item asymmetric properties (AsymmetricObjectProperty)
-  \item assertions other than individual equality assertions and negative property assertions (DifferentIndividuals, ClassAssertion, ObjectPropertyAssertion, and DataPropertyAssertion) 
-\end{itemize}
-
-\subsection{not supported constructs in OWL 2 QL}
-
-\begin{itemize}
-	\item existential quantification to a class expression or a data range (ObjectSomeValuesFrom and DataSomeValuesFrom) in the subclass position
-  \item self-restriction (ObjectHasSelf)
-  \item existential quantification to an individual or a literal (ObjectHasValue, DataHasValue)
-  \item enumeration of individuals and literals (ObjectOneOf, DataOneOf)
-  \item universal quantification to a class expression or a data range (ObjectAllValuesFrom, DataAllValuesFrom)
-  \item cardinality restrictions (ObjectMaxCardinality, ObjectMinCardinality, ObjectExactCardinality, DataMaxCardinality, DataMinCardinality, DataExactCardinality)
-  \item disjunction (ObjectUnionOf, DisjointUnion, and DataUnionOf)
-  \item property inclusions (SubObjectPropertyOf) involving property chains
-  \item functional and inverse-functional properties (FunctionalObjectProperty, InverseFunctionalObjectProperty, and FunctionalDataProperty)
-  \item transitive properties (TransitiveObjectProperty)
-  \item keys (HasKey)
-  \item individual equality assertions and negative property assertions
-\end{itemize}
- 
-
-\section{RDF Validation Requirements Expressible By OWL 2 QL}
-
-\section{RDF Validation Requirements Not Expressible By OWL 2 QL}
+\section{RDF Validation Requirements Not Covered By OWL 2 QL}
 
 \subsection{class-specific disjoint data properties}
 
@@ -272,21 +213,82 @@ evaluation using practical data set
 
 \section{Appendix}
 
+
+\subsection{Allowed Usage of Constructs in Class Expressions in OWL 2 QL}
+
+\textbf{Subclass Expressions}
+
+\begin{itemize}
+	\item class
+  \item ObjectSomeValuesFrom (where the class is limited to owl:Thing)
+  \item DataSomeValuesFrom
+\end{itemize}
+
+\textbf{Superclass Expressions}
+
+\begin{itemize}
+	\item class
+  \item ObjectIntersectionOf
+  \item ObjectComplementOf
+  \item ObjectSomeValuesFrom
+  \item DataSomeValuesFrom
+\end{itemize}
+ 
+\subsection{Supported Constructs in OWL 2 QL}
+
+\begin{itemize}
+	\item subclass axioms (SubClassOf)
+  \item class expression equivalence (EquivalentClasses)
+  \item class expression disjointness (DisjointClasses)
+  \item inverse object properties (InverseObjectProperties)
+  \item property inclusion (SubObjectPropertyOf not involving property chains and SubDataPropertyOf)
+  \item property equivalence (EquivalentObjectProperties and EquivalentDataProperties)
+  \item property domain (ObjectPropertyDomain and DataPropertyDomain)
+  \item property range (ObjectPropertyRange and DataPropertyRange)
+  \item disjoint properties (DisjointObjectProperties and DisjointDataProperties)
+  \item symmetric properties (SymmetricObjectProperty)
+  \item reflexive properties (ReflexiveObjectProperty)
+  \item irreflexive properties (IrreflexiveObjectProperty)
+  \item asymmetric properties (AsymmetricObjectProperty)
+  \item assertions other than individual equality assertions and negative property assertions (DifferentIndividuals, ClassAssertion, ObjectPropertyAssertion, and DataPropertyAssertion) 
+\end{itemize}
+
+\subsection{Not Supported Constructs in OWL 2 QL}
+
+\begin{itemize}
+	\item existential quantification to a class expression or a data range (ObjectSomeValuesFrom and DataSomeValuesFrom) in the subclass position
+  \item self-restriction (ObjectHasSelf)
+  \item existential quantification to an individual or a literal (ObjectHasValue, DataHasValue)
+  \item enumeration of individuals and literals (ObjectOneOf, DataOneOf)
+  \item universal quantification to a class expression or a data range (ObjectAllValuesFrom, DataAllValuesFrom)
+  \item cardinality restrictions (ObjectMaxCardinality, ObjectMinCardinality, ObjectExactCardinality, DataMaxCardinality, DataMinCardinality, DataExactCardinality)
+  \item disjunction (ObjectUnionOf, DisjointUnion, and DataUnionOf)
+  \item property inclusions (SubObjectPropertyOf) involving property chains
+  \item functional and inverse-functional properties (FunctionalObjectProperty, InverseFunctionalObjectProperty, and FunctionalDataProperty)
+  \item transitive properties (TransitiveObjectProperty)
+  \item keys (HasKey)
+  \item individual equality assertions and negative property assertions
+\end{itemize}
+
 \subsection{RDF Validation Requirements Covered by OWL 2 QL}
 
 \begin{table}
 \caption{RDF Validation Requirements Covered by OWL 2 QL}
 \label{tab:RequirementsCoveredOWL2QL}
 \centering
-\begin{tabular}{lcccccccc}
+\begin{tabular}{ll}
 \hr
-Requirements \\
+Requirements Classification & Requirements \\
 \hr
-R-1-UNIQUENESS-OF-URIS \\
-R-2-UNIQUE-INSTANCES \\
-R-3-EQUIVALENT-CLASSES \\
-R-4-EQUIVALENT-OBJECT-PROPERTIES \\
-R-5-EQUIVALENT-DATA-PROPERTIES \\
+& R-1-UNIQUENESS-OF-URIS \\
+& R-2-UNIQUE-INSTANCES \\
+& R-3-EQUIVALENT-CLASSES \\
+& R-4-EQUIVALENT-OBJECT-PROPERTIES \\
+& R-5-EQUIVALENT-DATA-PROPERTIES \\
+& R-7-DISJOINT-CLASSES \\
+& R-9-DISJOINT-OBJECT-PROPERTIES \\
+& R-10-DISJOINT-DATA-PROPERTIES \\
+& R-14-DISJOINT-INDIVIDUALS \\
 \hr
 \end{tabular}
 \end{table}
@@ -297,11 +299,15 @@ R-5-EQUIVALENT-DATA-PROPERTIES \\
 \caption{RDF Validation Requirements Not Covered by OWL 2 QL}
 \label{tab:RequirementsNotCoveredOWL2QL}
 \centering
-\begin{tabular}{lcccccccc}
+\begin{tabular}{lc}
 \hr
-Requirements \\
+Requirements & Covering Constraint Languages \\
 \hr
-R-6-EQUIVALENT-INDIVIDUALS \\
+R-6-EQUIVALENT-INDIVIDUALS & OWL 2 DL \\
+R-8-DISJOINT-UNION-OF-CLASS-EXPRESSIONS & OWL 2 DL \\
+R-11-DISJOINT-DATA-PROPERTIES-CLASS-SPECIFIC & ShEx \\
+R-12-DISJOINT-OBJECT-PROPERTIES-CLASS-SPECIFIC & ShEx \\
+R-13-DISJOINT-GROUP-OF-PROPERTIES-CLASS-SPECIFIC & ShEx \\
 \hr
 \end{tabular}
 \end{table}
