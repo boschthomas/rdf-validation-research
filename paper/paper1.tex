@@ -218,21 +218,21 @@ evaluation using practical data set
 
 \textbf{Subclass Expressions}
 
-\begin{itemize}
-	\item class
-  \item ObjectSomeValuesFrom (where the class is limited to owl:Thing)
-  \item DataSomeValuesFrom
-\end{itemize}
+\begin{ex}
+subClassExpression :=
+    Class |
+    subObjectSomeValuesFrom | DataSomeValuesFrom
+subObjectSomeValuesFrom := 'ObjectSomeValuesFrom' '(' ObjectPropertyExpression owl:Thing ')'
+\end{ex}
 
 \textbf{Superclass Expressions}
 
-\begin{itemize}
-	\item class
-  \item ObjectIntersectionOf
-  \item ObjectComplementOf
-  \item ObjectSomeValuesFrom
-  \item DataSomeValuesFrom
-\end{itemize}
+\begin{ex}
+superClassExpression :=
+    Class |
+    superObjectIntersectionOf | superObjectComplementOf |
+    superObjectSomeValuesFrom | DataSomeValuesFrom
+\end{ex}
  
 \subsection{Supported Constructs in OWL 2 QL}
 
@@ -282,13 +282,17 @@ Requirements Classification & Requirements \\
 \hr
 & R-1-UNIQUENESS-OF-URIS \\
 & R-2-UNIQUE-INSTANCES \\
-& R-3-EQUIVALENT-CLASSES \\
-& R-4-EQUIVALENT-OBJECT-PROPERTIES \\
-& R-5-EQUIVALENT-DATA-PROPERTIES \\
-& R-7-DISJOINT-CLASSES \\
-& R-9-DISJOINT-OBJECT-PROPERTIES \\
-& R-10-DISJOINT-DATA-PROPERTIES \\
-& R-14-DISJOINT-INDIVIDUALS \\
+& R-3-EQUIVALENT-CLASSES (EquivalentClasses) \\
+& R-4-EQUIVALENT-OBJECT-PROPERTIES (EquivalentObjectProperties) \\
+& R-5-EQUIVALENT-DATA-PROPERTIES (EquivalentDataProperties) \\
+& R-7-DISJOINT-CLASSES (DisjointClasses) \\
+& R-9-DISJOINT-OBJECT-PROPERTIES (DisjointObjectProperties) \\
+& R-10-DISJOINT-DATA-PROPERTIES (DisjointDataProperties) \\
+& R-14-DISJOINT-INDIVIDUALS (DifferentIndividuals) \\
+& R-25-OBJECT-PROPERTY-DOMAIN (ObjectPropertyDomain) \\
+& R-26-DATA-PROPERTY-DOMAIN (DataPropertyDomain) \\
+& R-27-CLASS-SPECIFIC-VALIDATION \\
+& R-28-OBJECT-PROPERTY-RANGE (ObjectPropertyRange) \\
 \hr
 \end{tabular}
 \end{table}
@@ -303,11 +307,21 @@ Requirements Classification & Requirements \\
 \hr
 Requirements & Covering Constraint Languages \\
 \hr
-R-6-EQUIVALENT-INDIVIDUALS & OWL 2 DL \\
-R-8-DISJOINT-UNION-OF-CLASS-EXPRESSIONS & OWL 2 DL \\
+R-6-EQUIVALENT-INDIVIDUALS (SameIndividual) & OWL 2 DL \\
+R-8-DISJOINT-UNION-OF-CLASS-EXPRESSIONS (DisjointUnion) & OWL 2 DL \\
 R-11-DISJOINT-DATA-PROPERTIES-CLASS-SPECIFIC & ShEx \\
 R-12-DISJOINT-OBJECT-PROPERTIES-CLASS-SPECIFIC & ShEx \\
 R-13-DISJOINT-GROUP-OF-PROPERTIES-CLASS-SPECIFIC & ShEx \\
+R-15-CONJUNCTION-OF-CLASS-EXPRESSIONS (ObjectIntersectionOf) & OWL 2 DL \\
+R-16-CONJUNCTION-OF-DATA-RANGES (DataIntersectionOf) & OWL 2 DL \\
+R-17-DISJUNCTION-OF-CLASS-EXPRESSIONS (ObjectUnionOf) & OWL 2 DL \\
+R-18-DISJUNCTION-OF-DATA-RANGES (DataUnionOf) & OWL 2 DL \\
+R-19-NEGATION-OF-CLASS-EXPRESSIONS (ObjectComplementOf) & OWL 2 DL \\
+R-20-NEGATION-OF-DATA-RANGES (DataComplementOf) & OWL 2 DL \\
+R-21-IRI-PATTERN-MATCHING-ON-RDF-SUBJECTS & SPARQL, SPIN \\
+R-22-IRI-PATTERN-MATCHING-ON-RDF-OBJECTS & SPARQL, SPIN \\
+R-23-IRI-PATTERN-MATCHING-ON-RDF-PROPERTIES & SPARQL, SPIN \\
+R-24-PROVENANCE-CONSTRAINTS & \\
 \hr
 \end{tabular}
 \end{table}
