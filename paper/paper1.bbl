@@ -1,3 +1,9 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{owl2profiles2008}
+Boris Motik, Bernardo~Cuenca Grau, Ian Horrocks, Zhe Wu, Achille Fokoue, and
+  Carsten Lutz.
+\newblock Owl 2 web ontology language: Profiles.
+\newblock Technical report, December 2008.
 
 \end{thebibliography}

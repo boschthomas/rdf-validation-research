@@ -95,7 +95,7 @@ XXXXX \\
 
 
 
-\section{Idea}
+\section{Ideas}
 
 
 
@@ -123,6 +123,8 @@ auf Seite 51 veranschaulicht, ist die Komplexität des Reasoning abhängig von d
 Allerding wäre wie bspw. in 
 \url{http://www.aifb.kit.edu/images/d/d2/2005_925_Haase_Consistent_Evol_1.pdf} beschrieben auch eine sogenannte 'User-defined Consistency' denkbar. Genau an dieser Stelle könnten wir ansetzen.
 
+\tb{should we provide an implementation of RDF Validation with OWL 2 QL in the RDF Validator (purl.org/net/rdfval-demo)?}
+
 \section{research questions}
 
 \begin{itemize}
@@ -132,7 +134,28 @@ Allerding wäre wie bspw. in
 	\item what are the effects of these constraints regarding complexity?
 \end{itemize}
 
-\section{Requirements Not Expressible By OWL 2 QL}
+\section{OWL 2 QL}
+
+OWL 2 profiles specification: \cite{owl2profiles2008}
+
+\begin{itemize}
+  \item OWL 2 QL constructs
+	\item Difference between OWL 2 DL and OWL 2 QL
+\end{itemize}
+
+\section{RDF Validation Requirements Expressible By OWL 2 QL}
+
+\section{RDF Validation Requirements Not Expressible By OWL 2 QL}
+
+\subsection{class-specific disjoint data properties}
+
+constraint (ShEx):
+
+\begin{ex}
+(foaf:name xsd:string  | foaf:givenName xsd:string+, foaf:familyName xsd:string)
+\end{ex}
+
+\subsection{class-specific disjoint object properties}
 
 \subsection{Class-Specific Disjoint Group of Properties}
 
