@@ -146,7 +146,17 @@ OWL 2 QL is based on the DL-Lite family of description logics. Several variants 
 
 \section{RDF Validation Requirements Not Covered By OWL 2 QL}
 
-\subsection{class-specific disjoint data properties}
+\subsection{Class-Specific Disjointness of Properties}
+
+requirements:
+
+\begin{itemize}
+	\item R-11-DISJOINT-DATA-PROPERTIES-CLASS-SPECIFIC
+  \item R-12-DISJOINT-OBJECT-PROPERTIES-CLASS-SPECIFIC
+  \item R-13-DISJOINT-GROUP-OF-PROPERTIES-CLASS-SPECIFIC
+\end{itemize}
+
+\textbf{class-specific disjoint data properties}
 
 constraint (ShEx):
 
@@ -154,9 +164,11 @@ constraint (ShEx):
 (foaf:name xsd:string  | foaf:givenName xsd:string+, foaf:familyName xsd:string)
 \end{ex}
 
-\subsection{class-specific disjoint object properties}
+\textbf{class-specific disjoint object properties}
 
-\subsection{Class-Specific Disjoint Group of Properties}
+
+
+\textbf{Class-Specific Disjoint Group of Properties}
 
 requirements DB:
 \begin{itemize}
@@ -200,6 +212,36 @@ invalid data (ShEx):
     foaf:familyName "Skywalker" ;
     foaf:name "Anakin Skywalker" .
 \end{ex}
+
+\subsection{Default Values}
+
+requirements:
+
+\begin{itemize}
+	\item R-31-DEFAULT-VALUES-OF-RDF-OBJECTS
+  \item R-38-DEFAULT-VALUES-OF-RDF-LITERALS
+\end{itemize}
+
+\subsection{Membership in Controlled Vocabularies}
+
+requirements:
+
+\begin{itemize}
+	\item R-32-MEMBERSHIP-OF-RDF-OBJECTS-IN-CONTROLLED-VOCABULARIES
+	\item R-39-MEMBERSHIP-OF-RDF-LITERALS-IN-CONTROLLED-VOCABULARIES
+\end{itemize}
+
+\subsection{Pattern Matching}
+
+requirements:
+
+\begin{itemize}
+	\item R-21
+	\item R-22
+	\item R-23
+	\item R-44
+	\item R-141
+\end{itemize}
 
 \section{Related Work}
 
@@ -293,6 +335,7 @@ Requirements Classification & Requirements \\
 & R-26-DATA-PROPERTY-DOMAIN (DataPropertyDomain) \\
 & R-27-CLASS-SPECIFIC-VALIDATION \\
 & R-28-OBJECT-PROPERTY-RANGE (ObjectPropertyRange) \\
+& R-35-DATA-PROPERTY-RANGE (DataPropertyRange) \\
 \hr
 \end{tabular}
 \end{table}
@@ -319,9 +362,21 @@ R-18-DISJUNCTION-OF-DATA-RANGES (DataUnionOf) & OWL 2 DL \\
 R-19-NEGATION-OF-CLASS-EXPRESSIONS (ObjectComplementOf) & OWL 2 DL \\
 R-20-NEGATION-OF-DATA-RANGES (DataComplementOf) & OWL 2 DL \\
 R-21-IRI-PATTERN-MATCHING-ON-RDF-SUBJECTS & SPARQL, SPIN \\
-R-22-IRI-PATTERN-MATCHING-ON-RDF-OBJECTS & SPARQL, SPIN \\
-R-23-IRI-PATTERN-MATCHING-ON-RDF-PROPERTIES & SPARQL, SPIN \\
+R-22-IRI-PATTERN-MATCHING-ON-RDF-OBJECTS & SPARQL, SPIN, ShEx \\
+R-23-IRI-PATTERN-MATCHING-ON-RDF-PROPERTIES & SPARQL, SPIN, ShEx \\
 R-24-PROVENANCE-CONSTRAINTS & \\
+R-29-CLASS-SPECIFIC-RANGE-OF-RDF-OBJECTS & SPIN, RS \\
+R-30-ALLOWED-VALUES-FOR-RDF-OBJECTS (ObjectOneOf) & OWL 2 DL \\
+R-31-DEFAULT-VALUES-OF-RDF-OBJECTS & SPIN, BF, RS \\
+R-32-MEMBERSHIP-OF-RDF-OBJECTS-IN-CONTROLLED-VOCABULARIES & DSP, SPIN \\
+R-33-NEGATIVE-OBJECT-CONSTRAINTS \\
+R-34-AVAILABLE-CLASS-DEFINITION & ShEx, SPIN \\
+R-36-CLASS-SPECIFIC-RANGE-OF-RDF-LITERALS & ShEx, BF, SPIN \\
+R-37-ALLOWED-VALUES-FOR-RDF-LITERALS (DataOneOf) & OWL 2 DL \\
+R-38-DEFAULT-VALUES-OF-RDF-LITERALS & SPIN, BF, RS \\
+R-39-MEMBERSHIP-OF-RDF-LITERALS-IN-CONTROLLED-VOCABULARIES & DSP, SPIN \\
+R-44-PATTERN-MATCHING-ON-RDF-LITERALS & ShEx, RS, SPIN \\
+R-141-NEGATIVE-PATTERN-MATCHING-ON-RDF-LITERALS & DQTP, SPIN \\
 \hr
 \end{tabular}
 \end{table}
