@@ -299,6 +299,22 @@ requirements:
 	\item R-66-PROPERTY-GROUPS
 \end{itemize}
 
+\subsection{RDF-Specific Validation}
+
+requirements:
+
+\begin{itemize}
+	\item R-120-HANDLE-RDF-COLLECTIONS
+\end{itemize}
+
+\subsection{RDF Shapes}
+
+requirements:
+
+\begin{itemize}
+	\item R-125-RDF-SHAPE-CHECKING
+\end{itemize}
+
 
 
 \section{Related Work}
@@ -307,70 +323,15 @@ requirements:
 
 \section{Evaluation}
 
-evaluation using practical data set
-
-\section{Conclusion and Future Work}
-
-\section{Appendix}
 
 
-\subsection{Allowed Usage of Constructs in Class Expressions in OWL 2 QL}
+\subsection{Evaluation Using Practical Data Set}
 
-\textbf{Subclass Expressions}
 
-\begin{ex}
-subClassExpression :=
-    Class |
-    subObjectSomeValuesFrom | DataSomeValuesFrom
-subObjectSomeValuesFrom := 'ObjectSomeValuesFrom' '(' ObjectPropertyExpression owl:Thing ')'
-\end{ex}
-
-\textbf{Superclass Expressions}
-
-\begin{ex}
-superClassExpression :=
-    Class |
-    superObjectIntersectionOf | superObjectComplementOf |
-    superObjectSomeValuesFrom | DataSomeValuesFrom
-\end{ex}
- 
-\subsection{Supported Constructs in OWL 2 QL}
-
-\begin{itemize}
-	\item subclass axioms (SubClassOf)
-  \item class expression equivalence (EquivalentClasses)
-  \item class expression disjointness (DisjointClasses)
-  \item inverse object properties (InverseObjectProperties)
-  \item property inclusion (SubObjectPropertyOf not involving property chains and SubDataPropertyOf)
-  \item property equivalence (EquivalentObjectProperties and EquivalentDataProperties)
-  \item property domain (ObjectPropertyDomain and DataPropertyDomain)
-  \item property range (ObjectPropertyRange and DataPropertyRange)
-  \item disjoint properties (DisjointObjectProperties and DisjointDataProperties)
-  \item symmetric properties (SymmetricObjectProperty)
-  \item reflexive properties (ReflexiveObjectProperty)
-  \item irreflexive properties (IrreflexiveObjectProperty)
-  \item asymmetric properties (AsymmetricObjectProperty)
-  \item assertions other than individual equality assertions and negative property assertions (DifferentIndividuals, ClassAssertion, ObjectPropertyAssertion, and DataPropertyAssertion) 
-\end{itemize}
-
-\subsection{Not Supported Constructs in OWL 2 QL}
-
-\begin{itemize}
-	\item existential quantification to a class expression or a data range (ObjectSomeValuesFrom and DataSomeValuesFrom) in the subclass position
-  \item self-restriction (ObjectHasSelf)
-  \item existential quantification to an individual or a literal (ObjectHasValue, DataHasValue)
-  \item enumeration of individuals and literals (ObjectOneOf, DataOneOf)
-  \item universal quantification to a class expression or a data range (ObjectAllValuesFrom, DataAllValuesFrom)
-  \item cardinality restrictions (ObjectMaxCardinality, ObjectMinCardinality, ObjectExactCardinality, DataMaxCardinality, DataMinCardinality, DataExactCardinality)
-  \item disjunction (ObjectUnionOf, DisjointUnion, and DataUnionOf)
-  \item property inclusions (SubObjectPropertyOf) involving property chains
-  \item functional and inverse-functional properties (FunctionalObjectProperty, InverseFunctionalObjectProperty, and FunctionalDataProperty)
-  \item transitive properties (TransitiveObjectProperty)
-  \item keys (HasKey)
-  \item individual equality assertions and negative property assertions
-\end{itemize}
 
 \subsection{RDF Validation Requirements Covered by OWL 2 QL}
+
+Table~\ref{tab:RequirementsCoveredOWL2QL}
 
 \begin{table}
 \caption{RDF Validation Requirements Covered by OWL 2 QL}
@@ -401,11 +362,37 @@ Requirements Classification & Requirements \\
 & R-61-SYMMETRIC-OBJECT-PROPERTIES (SymmetricObjectProperty) \\
 & R-62-ASYMMETRIC-OBJECT-PROPERTIES (AsymmetricObjectProperty) \\
 & R-64-SUB-DATA-PROPERTIES (SubDataPropertyOf) \\
+& R-93-DIFFERENCE-BETWEEN-CONSTRAINTS-ON-OBJECT-AND-DATA-PROPERTIES \\
+& R-94-POSITIVE-OBJECT-PROPERTY-ASSERTIONS (ObjectPropertyAssertion) \\
+& R-95-POSITIVE-DATA-PROPERTY-ASSERTIONS (DataPropertyAssertion) \\
+& R-99-STABLE-IDENTIFICATION-OF-CONSTRAINTS \\
+& R-100-SUBSUMPTION (SubClassOf) \\
+& R-101-DECLARATIVE-CONSTRAINT-LANGUAGE \\
+& R-102-INTUITIVE-CONSTRAINT-LANGUAGE \\
+& R-103-HIGH-LEVEL-CONSTRAINT-LANGUAGE \\
+& R-104-CONSTRAINT-LANGUAGE-HAVING-IMPLEMENTATION-LANGUAGE \\
+& R-105-CONSTRAINT-LANGUAGE-TRANSLATABLE-TO-IMPLEMENTATION-LANGUAGE \\
+& R-107-TRANSFORMATIONS-BETWEEN-CONSTRAINT-LANGUAGE-AND-UML \\
+& R-108-TRANSFORMATIONS-BETWEEN-CONSTRAINT-LANGUAGE-AND-XML-SCHEMA \\
+& R-109-TRANSFORMATIONS-BETWEEN-CONSTRAINT-LANGUAGE-AND-OCL \\
+& R-110-TRANSFORMATIONS-BETWEEN-CONSTRAINT-LANGUAGE-AND-SPARQL \\
+& R-111-BASIC-USE-CASES-COVERED-BY-CONSTRAINT-LANGUAGE \\
+& R-113-INTERACTION-OF-VALIDATION-WITH-REASONING \\
+& R-115-CLOSED-WORLD-ASSUMPTION-CWA \\
+& R-116-UNIQUE-NAME-ASSUMPTION-UNA \\
+& R-117-CONTEXT-SENSITIVE-CONSTRAINTS \\
+& R-118-NAMESPACE-SENSITIVE-CONSTRAINTS \\
+& R-122-TRADE-OFF-BETWEEN-DIMENSIONS-EXPRESSIVITY-COMPLEXITY-PREDICTABILITY \\
+& R-124-DESCRIBE-DATA \\
 \hr
 \end{tabular}
 \end{table}
 
 \subsection{RDF Validation Requirements Not Covered by OWL 2 QL}
+
+Table~\ref{tab:RequirementsNotCoveredOWL2QL-1}
+Table~\ref{tab:RequirementsNotCoveredOWL2QL-2}
+Table~\ref{tab:RequirementsNotCoveredOWL2QL-3}
 
 %\medskip% adds some space before the table
 %\begin{adjustwidth}{-1in}{-1in}% adjust the L and R margins by 1 inch
@@ -573,12 +560,86 @@ R-89-SELF-RESTRICTION (ObjectHasSelf) & OWL 2 DL \\
 R-90-EXISTENTIAL-QUANTIFICATION-ON-DATA-PROPERTIES (DataSomeValuesFrom) & OWL 2 DL \\
 R-91-UNIVERSAL-QUANTIFICATION-ON-DATA-PROPERTIES (DataAllValuesFrom) & OWL 2 DL \\
 R-92-LITERAL-VALUE-RESTRICTION (DataHasValue) & OWL 2 DL \\
+R-96-NEGATIVE-OBJECT-PROPERTY-ASSERTIONS (NegativeObjectPropertyAssertion) & OWL 2 DL \\
+R-97-NEGATIVE-DATA-PROPERTY-ASSERTIONS (NegativeDataPropertyAssertion) & OWL 2 DL \\
+R-98-CHECK-VALIDITY-OF-URIS & \\
+R-106-EXTENSIBLE-CONSTRAINT-LANGUAGE & \\
+R-112-EXTENSIBLE-CONSTRAINTS & \\
+R-114-PROVIDE-RDF-REST-SERVICES-FOR-RDF-VALIDATION & \\
+R-119-VALIDATION-ON-NAMED-GRAPHS & \\
+R-120-HANDLE-RDF-COLLECTIONS & ShEx, SPIN \\
+R-121-SPECIFY-ORDER-OF-RDF-RESOURCES & \\
+R-123-STATE & \\
+R-125-RDF-SHAPE-CHECKING & ShEx \\
 
 R-141-NEGATIVE-PATTERN-MATCHING-ON-RDF-LITERALS & DQTP, SPIN \\
 R-142-NEGATIVE-RANGES-OF-RDF-LITERAL-VALUES & DQTP, SPIN \\
 \hr
 \end{tabular}
 \end{table}
+
+\section{Conclusion and Future Work}
+
+\section{Appendix}
+
+
+\subsection{Allowed Usage of Constructs in Class Expressions in OWL 2 QL}
+
+\textbf{Subclass Expressions}
+
+\begin{ex}
+subClassExpression :=
+    Class |
+    subObjectSomeValuesFrom | DataSomeValuesFrom
+subObjectSomeValuesFrom := 'ObjectSomeValuesFrom' '(' ObjectPropertyExpression owl:Thing ')'
+\end{ex}
+
+\textbf{Superclass Expressions}
+
+\begin{ex}
+superClassExpression :=
+    Class |
+    superObjectIntersectionOf | superObjectComplementOf |
+    superObjectSomeValuesFrom | DataSomeValuesFrom
+\end{ex}
+ 
+\subsection{Supported Constructs in OWL 2 QL}
+
+\begin{itemize}
+	\item subclass axioms (SubClassOf)
+  \item class expression equivalence (EquivalentClasses)
+  \item class expression disjointness (DisjointClasses)
+  \item inverse object properties (InverseObjectProperties)
+  \item property inclusion (SubObjectPropertyOf not involving property chains and SubDataPropertyOf)
+  \item property equivalence (EquivalentObjectProperties and EquivalentDataProperties)
+  \item property domain (ObjectPropertyDomain and DataPropertyDomain)
+  \item property range (ObjectPropertyRange and DataPropertyRange)
+  \item disjoint properties (DisjointObjectProperties and DisjointDataProperties)
+  \item symmetric properties (SymmetricObjectProperty)
+  \item reflexive properties (ReflexiveObjectProperty)
+  \item irreflexive properties (IrreflexiveObjectProperty)
+  \item asymmetric properties (AsymmetricObjectProperty)
+  \item assertions: DifferentIndividuals, ClassAssertion, ObjectPropertyAssertion, and DataPropertyAssertion
+\end{itemize}
+
+\subsection{Not Supported Constructs in OWL 2 QL}
+
+\begin{itemize}
+	\item existential quantification to a class expression or a data range (ObjectSomeValuesFrom and DataSomeValuesFrom) in the subclass position
+  \item self-restriction (ObjectHasSelf)
+  \item existential quantification to an individual or a literal (ObjectHasValue, DataHasValue)
+  \item enumeration of individuals and literals (ObjectOneOf, DataOneOf)
+  \item universal quantification to a class expression or a data range (ObjectAllValuesFrom, DataAllValuesFrom)
+  \item cardinality restrictions (ObjectMaxCardinality, ObjectMinCardinality, ObjectExactCardinality, DataMaxCardinality, DataMinCardinality, DataExactCardinality)
+  \item disjunction (ObjectUnionOf, DisjointUnion, and DataUnionOf)
+  \item property inclusions (SubObjectPropertyOf) involving property chains
+  \item functional and inverse-functional properties (FunctionalObjectProperty, InverseFunctionalObjectProperty, and FunctionalDataProperty)
+  \item transitive properties (TransitiveObjectProperty)
+  \item keys (HasKey)
+  \item individual equality assertions and negative property assertions (SameIndividual, NegativeObjectPropertyAssertion, NegativeDataPropertyAssertion)
+\end{itemize}
+
+
 
 \bibliography{literatur}{}
 \bibliographystyle{plain}
