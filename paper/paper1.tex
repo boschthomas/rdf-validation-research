@@ -64,7 +64,7 @@
 \newcommand{\ke}[1]{\todo[size=\small, color=orange!40]{\textbf{Kai:} #1}}
 \newcommand{\tb}[1]{\todo[size=\small, color=green!40]{\textbf{Thomas:} #1}}
 
-
+\setcounter{secnumdepth}{5}
 
 \begin{document}
 
@@ -162,7 +162,14 @@ requirements:
   \item R-13-DISJOINT-GROUP-OF-PROPERTIES-CLASS-SPECIFIC
 \end{itemize}
 
-\textbf{class-specific disjoint data properties}
+\subsubsection{Class-Specific Disjoint Data Properties}
+
+R-11-DISJOINT-DATA-PROPERTIES-CLASS-SPECIFIC
+
+\begin{itemize}
+	\item exclusive OR of data properties
+	\item with OWL 2, inclusive OR of properties would be possible to express, but not exclusive OR of data properties
+\end{itemize}
 
 constraint (ShEx):
 
@@ -170,17 +177,37 @@ constraint (ShEx):
 (foaf:name xsd:string  | foaf:givenName xsd:string+, foaf:familyName xsd:string)
 \end{ex}
 
-\textbf{class-specific disjoint object properties}
+valid data (ShEx):
 
+\begin{ex}
+<Anakin>
+    foaf:name "Anakin Skywalker" ;
+		foaf:familyName "Skywalker" .
+\end{ex}
 
+\begin{ex}
+<Anakin>
+    foaf:givenName "Anakin" ;
+		foaf:givenName "Darth" ;
+    foaf:familyName "Skywalker" .
+\end{ex}
 
-\textbf{Class-Specific Disjoint Group of Properties}
+invalid data (ShEx):
 
-requirements DB:
-\begin{itemize}
-  \item ID: R-13-DISJOINT-GROUP-OF-PROPERTIES-CLASS-SPECIFIC
-	\item URL: \url{http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/20}
-\end{itemize}
+\begin{ex}
+<Anakin>
+    foaf:name "Anakin Skywalker" ;
+    foaf:givenName "Anakin" ;
+    foaf:familyName "Skywalker" .
+\end{ex}
+
+\subsubsection{Class-Specific Disjoint Object Properties}
+
+R-12-DISJOINT-OBJECT-PROPERTIES-CLASS-SPECIFIC
+
+\subsubsection{Class-Specific Disjoint Group of Properties}
+
+R-13-DISJOINT-GROUP-OF-PROPERTIES-CLASS-SPECIFIC
 
 A \textless Human\textgreater has either a name or at least 1 given name and 1 family name.
 

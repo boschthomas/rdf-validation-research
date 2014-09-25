@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  25 SEP 2014 18:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  25 SEP 2014 19:26
 entering extended mode
 **paper1.tex
 (C:\Daten\Git\rdf-validation-research\paper\paper1.tex
@@ -1214,78 +1214,84 @@ an-nte 'User-defined Con-
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-Overfull \hbox (1.26622pt too wide) in paragraph at lines 182--183
-[]\OT1/cmr/m/n/10 URL: $http : / / lelystad . informatik . uni-[]mannheim . de 
-/ rdf-[]validation / ?q = node /
+Overfull \hbox (13.97115pt too wide) in paragraph at lines 182--183
+ \OT1/cmr/bx/n/10 5.1.2 Class-Specific Dis-joint Ob-ject Prop-er-ties[] \OT1/cm
+r/m/n/10 R-12-DISJOINT-OBJECT-
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 185.
+
+Overfull \hbox (19.82523pt too wide) in paragraph at lines 186--187
+ \OT1/cmr/bx/n/10 5.1.3 Class-Specific Dis-joint Group of Prop-er-ties[] \OT1/c
+mr/m/n/10 R-13-DISJOINT-GROUP-
+ []
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 188.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 185.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 188.
 
-Overfull \hbox (30.43268pt too wide) in paragraph at lines 236--237
+Overfull \hbox (30.43268pt too wide) in paragraph at lines 239--240
 []\OT1/cmr/m/n/10 R-32-MEMBERSHIP-OF-RDF-OBJECTS-IN-CONTROLLED-VOCABULARIES 
  []
 
 
-Overfull \hbox (34.18266pt too wide) in paragraph at lines 237--238
+Overfull \hbox (34.18266pt too wide) in paragraph at lines 240--241
 []\OT1/cmr/m/n/10 R-39-MEMBERSHIP-OF-RDF-LITERALS-IN-CONTROLLED-VOCABULARIES 
  []
 
 [3] [4]
-Overfull \hbox (46.19652pt too wide) in paragraph at lines 330--331
+Overfull \hbox (46.19652pt too wide) in paragraph at lines 333--334
 []\OT1/cmr/m/n/10 R-156-REFERENCES-TO-TRIPLES-CAUSING-THE-CONSTRAINT-VIOLATIONS
  
  []
 
 
-Overfull \hbox (14.66864pt too wide) in paragraph at lines 331--332
+Overfull \hbox (14.66864pt too wide) in paragraph at lines 334--335
 []\OT1/cmr/m/n/10 R-157-REFERENCES-TO-VALIDATION-RULES-CAUSING-CONSTRAINT-
  []
 
 
-Overfull \hbox (161.96768pt too wide) in paragraph at lines 359--400
+Overfull \hbox (161.96768pt too wide) in paragraph at lines 362--403
  [][] 
  []
 
 
-Overfull \hbox (241.8045pt too wide) in paragraph at lines 406--458
+Overfull \hbox (241.8045pt too wide) in paragraph at lines 409--461
  [][] 
  []
 
 
-Overfull \hbox (165.41986pt too wide) in paragraph at lines 535--591
+Overfull \hbox (165.41986pt too wide) in paragraph at lines 538--594
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 41.0617pt on input line 591.
+LaTeX Warning: Float too large for page by 41.0617pt on input line 594.
 
 
-Overfull \hbox (295.1778pt too wide) in paragraph at lines 597--615
+Overfull \hbox (295.1778pt too wide) in paragraph at lines 600--618
  [][] 
  []
 
 
-Overfull \hbox (234.19981pt too wide) in paragraph at lines 621--678
+Overfull \hbox (234.19981pt too wide) in paragraph at lines 624--681
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 52.0617pt on input line 678.
+LaTeX Warning: Float too large for page by 52.0617pt on input line 681.
 
 [5] [6] [7] [8] [9] [10]
-Overfull \hbox (8.37709pt too wide) in paragraph at lines 721--722
+Overfull \hbox (8.37709pt too wide) in paragraph at lines 724--725
 []\OT1/cmr/m/n/10 assertions: Dif-fer-entIn-di-vid-u-als, Clas-sAs-ser-tion, Ob
 -ject-Prop-ertyAsser-tion, and
  []
 
 
-Overfull \hbox (2.32169pt too wide) in paragraph at lines 732--733
+Overfull \hbox (2.32169pt too wide) in paragraph at lines 735--736
 \OT1/cmr/m/n/10 jectEx-act-Car-di-nal-ity, Data-Max-Car-di-nal-ity, DataM-in-Ca
 r-di-nal-ity, DataEx-act-
  []
@@ -1299,11 +1305,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  14046 strings out of 493921
  264461 string characters out of 3147262
- 326702 words of memory out of 3000000
+ 326742 words of memory out of 3000000
  17026 multiletter control sequences out of 15000+200000
  16524 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 55i,8n,54p,870b,232s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,8n,54p,870b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTe
@@ -1315,7 +1321,7 @@ msfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on paper1.pdf (11 pages, 177962 bytes).
+Output written on paper1.pdf (11 pages, 178000 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
