@@ -209,6 +209,11 @@ R-12-DISJOINT-OBJECT-PROPERTIES-CLASS-SPECIFIC
 
 R-13-DISJOINT-GROUP-OF-PROPERTIES-CLASS-SPECIFIC
 
+\begin{itemize}
+	\item exclusive OR of property groups
+	\item with OWL 2, inclusive OR of property groups would be possible to express, but not exclusive OR of property groups
+\end{itemize}
+
 A \textless Human\textgreater has either a name or at least 1 given name and 1 family name.
 
 constraint (ShEx):
@@ -263,6 +268,63 @@ requirements:
 	\item R-32-MEMBERSHIP-OF-RDF-OBJECTS-IN-CONTROLLED-VOCABULARIES
 	\item R-39-MEMBERSHIP-OF-RDF-LITERALS-IN-CONTROLLED-VOCABULARIES
 \end{itemize}
+
+constraint (DSP):
+
+\begin{ex}
+:bookDescriptionTemplate 
+    a dsp:DescriptionTemplate ;
+    dsp:resourceClass swrc:Book ; 
+    dsp:statementTemplate [
+        a dsp:NonLiteralStatementTemplate ;
+        dsp:property dcterms:subject ; 
+        dsp:nonLiteralConstraint [ 
+            a dsp:NonLiteralConstraint ;
+            dsp:valueClass skos:Concept ; 
+            dsp:vocabularyEncodingScheme :BookSubjects, :BookTopics, :BookCategories ] ] .
+\end{ex}
+
+A DSP consists of \ms{dsp:DescriptionTemplate}s that put constraints on instances of a certain class (\ms{dsp:resourceClass}). 
+\ms{:bookDescriptionTemplate} describes resources of the type \ms{swrc:Book}.
+The constraints can either be constraints on the description itself, e.g. a minimum occurrence of instances of this class. Additionally, constraints on single properties can be defined within a \ms{dsp:StatementTemplate}.
+The \ms{dsp:NonLiteralStatementTemplate} restricts books to have \ms{dcterms:subject} (\ms{dsp:property}) relationships to RDF objects which are further described by the \ms{dsp:NonLiteralConstraint}.
+These RDF objects have to be of the class \ms{skos:Concept} (\ms{dsp:ValueClass}).
+Controlled vocabularies (like \ms{:BookSubjects}) are represented as \ms{skos:ConceptSchemes} in RDF and as \ms{dsp:VocabularyEncodingScheme}s in DSP.
+\ms{dsp:VocabularyEncodingScheme} points to a list of controlled vocabularies the \ms{skos:Concept} resources must be members of.
+The controlled vocabulary members (\ms{skos:Concept}s) are related to the controlled vocabulary (\ms{skos:ConceptScheme}) via the object properties \ms{skos:inScheme} and \ms{dcam:memberOf}.
+
+valid data (DSP):
+
+\begin{ex}
+:ArtficialIntelligence
+    a swrc:Book ;
+    dcterms:subject :ComputerScience .
+:ComputerScience
+    a skos:Concept ;
+    dcam:memberOf :BookSubjects ;
+    skos:inScheme :BookSubjects .
+:BookSubjects
+    a skos:ConceptScheme .
+\end{ex}
+
+invalid data (DSP):
+
+\begin{ex}
+:ArtficialIntelligence
+    a swrc:Book ;
+    dcterms:subject :ComputerScience .
+:ComputerScience
+    a skos:Concept ;
+    dcam:memberOf :BooksAboutBirds ;
+    skos:inScheme :BooksAboutBirds ;
+    dcam:memberOf :BookSubjects ;
+    skos:inScheme :BookSubjects .
+:BookSubjects
+    a skos:ConceptScheme .
+\end{ex}
+
+The related subject (\ms{:ComputerScience}) is a member of a controlled vocabulary (\ms{:BooksAboutBirds}) 
+which is not part of the list of allowed controlled vocabularies.
 
 \subsection{Pattern Matching}
 
@@ -360,6 +422,7 @@ requirements:
 	\item R-159-EXPLAIN-REASONS-OF-CONSTRAINT-VIOLATIONS
 \end{itemize}
 
+\subsection{Requirements Covered by OWL 2 DL But Not by OWL 2 QL}
 
 
 
