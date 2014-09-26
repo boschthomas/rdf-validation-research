@@ -378,14 +378,14 @@ The first axiom explicitly declares :SSN to be a datatype.
 The datatype :SSN can be used just like any other datatype; 
 for example, it is used in the third axiom to define the range of the :hasSSN property. 
 
-valida data (OWL 2 DL):
+valid data (OWL 2 DL):
 
 \begin{ex}
 :IimBernersLee
     :hasSSN "123-45-6789"^^:SSN .
 \end{ex}
 
-invalida data (OWL 2 DL):
+invalid data (OWL 2 DL):
 
 \begin{ex}
 :IimBernersLee
@@ -457,7 +457,7 @@ constraints (OWL 2 DL) [turtle syntax]:
 
 The data range 'NumberPlayersPerWorldCupTeam' contains the non negative integers 1 to 23, as each world cup team can only have 23 football players at most.
 
-valida data (OWL 2 DL):
+valid data (OWL 2 DL):
 
 \begin{ex}
 :MarioGoetze
@@ -480,6 +480,47 @@ requirements:
   \item R-48-MISSING-LANGUAGE-TAGS
 	\item R-49-RDF-LITERALS-HAVING-AT-MOST-ONE-LANGUAGE-TAG
 \end{itemize}
+
+\subsubsection{R-49-RDF-LITERALS-HAVING-AT-MOST-ONE-LANGUAGE-TAG}
+
+constraints (DQTP):
+
+ONELANGPattern \cite{Kontokostas2014} 
+
+A literal value should contain at most
+1 literal for a language. P1 is the property containing the
+literal and V1 is the language we want to check.
+
+\begin{ex}
+SELECT DISTINCT ?s WHERE { ?s %%P1%% ?c
+    BIND ( lang(?c) AS ?l )
+    FILTER (isLiteral (?c) && lang(?c) = %%V1%%)}
+GROUP BY ?s HAVING COUNT (?l) > 1
+\end{ex}
+
+test binding (DQTP):
+
+a single English (“en”) foaf:name
+
+\begin{ex}
+P1 => foaf:name
+V1 => en
+\end{ex}
+
+valid data (DQTP):
+
+\begin{ex}
+:LeiaSkywalker
+    foaf:name 'Leia Skywalker'@en .
+\end{ex}
+
+invalid data (DQTP):
+
+\begin{ex}
+:LeiaSkywalker
+    foaf:name 'Leia Skywalker'@en ;
+    foaf:name 'Leia'@en .
+\end{ex}
 
 \subsection{Property Occurrences}
 
