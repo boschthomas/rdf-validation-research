@@ -338,6 +338,54 @@ requirements:
   \item R-141-NEGATIVE-PATTERN-MATCHING-ON-RDF-LITERALS
 \end{itemize}
 
+\subsubsection{R-44-PATTERN-MATCHING-ON-RDF-LITERALS}
+
+constraints (OWL 2 DL) [description logics abstract syntax]:
+
+\begin{ex}
+ToDO
+\end{ex}
+
+constraints (OWL 2 DL) [functional-style syntax]:
+
+\begin{ex}
+Declaration( Datatype( :SSN ) ) 
+DatatypeDefinition( 
+    :SSN
+    DatatypeRestriction( xsd:string xsd:pattern "[0-9]{3}-[0-9]{2}-[0-9]{4}" ) )     
+DataPropertyRange( :hasSSN :SSN ) 
+\end{ex}
+
+constraints (OWL 2 DL) [turtle syntax]:
+
+\begin{ex}
+:SSN 
+    a rdfs:Datatype ;
+    owl:equivalentClass [
+        a rdfs:Datatype ;
+        owl:onDatatype xsd:string ;
+        owl:withRestrictions ( 
+            [ xsd:pattern "[0-9]{3}-[0-9]{2}-[0-9]{4}" ] ) ] .
+\end{ex}
+
+\begin{itemize}
+	\item OWL 2 construct 'DatatypeRestriction' not allowed for OWL 2 QL
+\end{itemize}
+
+valida data (OWL 2 DL):
+
+\begin{ex}
+:IimBernersLee
+    :hasSSN "123-45-6789"^^:SSN .
+\end{ex}
+
+invalida data (OWL 2 DL):
+
+\begin{ex}
+:IimBernersLee
+    :hasSSN "123456789"^^:SSN .
+\end{ex}
+
 \subsection{Calculations on and Comparisons of RDF Literals}
 
 requirements:
@@ -354,10 +402,11 @@ requirements:
 requirements:
 
 \begin{itemize}
+	\item R-44-PATTERN-MATCHING-ON-RDF-LITERALS
 	\item R-45-RANGES-OF-RDF-LITERAL-VALUES
-  \item R-142-NEGATIVE-RANGES-OF-RDF-LITERAL-VALUES
 	\item R-46-CONSTRAINING-FACETS
 	\item R-50-WHITESPACE-HANDLING-OF-RDF-LITERALS
+	\item R-142-NEGATIVE-RANGES-OF-RDF-LITERAL-VALUES
 \end{itemize}
 
 \subsection{Language of RDF Literals}
