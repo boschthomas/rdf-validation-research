@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  26 SEP 2014 13:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  26 SEP 2014 13:32
 entering extended mode
 **paper1.tex
 (C:\Daten\Git\rdf-validation-research\paper\paper1.tex
@@ -1255,55 +1255,55 @@ Overfull \hbox (4.73596pt too wide) in paragraph at lines 343--344
  []
 
 [5] [6]
-Overfull \hbox (46.19652pt too wide) in paragraph at lines 468--469
+Overfull \hbox (46.19652pt too wide) in paragraph at lines 474--475
 []\OT1/cmr/m/n/10 R-156-REFERENCES-TO-TRIPLES-CAUSING-THE-CONSTRAINT-VIOLATIONS
  
  []
 
 
-Overfull \hbox (14.66864pt too wide) in paragraph at lines 469--470
+Overfull \hbox (14.66864pt too wide) in paragraph at lines 475--476
 []\OT1/cmr/m/n/10 R-157-REFERENCES-TO-VALIDATION-RULES-CAUSING-CONSTRAINT-
  []
 
 
-Overfull \hbox (161.96768pt too wide) in paragraph at lines 498--539
+Overfull \hbox (161.96768pt too wide) in paragraph at lines 504--545
  [][] 
  []
 
 [7]
-Overfull \hbox (241.8045pt too wide) in paragraph at lines 545--597
+Overfull \hbox (241.8045pt too wide) in paragraph at lines 551--603
  [][] 
  []
 
 
-Overfull \hbox (165.41986pt too wide) in paragraph at lines 674--730
+Overfull \hbox (165.41986pt too wide) in paragraph at lines 680--736
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 41.0617pt on input line 730.
+LaTeX Warning: Float too large for page by 41.0617pt on input line 736.
 
 
-Overfull \hbox (295.1778pt too wide) in paragraph at lines 736--754
+Overfull \hbox (295.1778pt too wide) in paragraph at lines 742--760
  [][] 
  []
 
 
-Overfull \hbox (234.19981pt too wide) in paragraph at lines 760--817
+Overfull \hbox (234.19981pt too wide) in paragraph at lines 766--823
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 52.0617pt on input line 817.
+LaTeX Warning: Float too large for page by 52.0617pt on input line 823.
 
 
-Overfull \hbox (8.37709pt too wide) in paragraph at lines 860--861
+Overfull \hbox (8.37709pt too wide) in paragraph at lines 866--867
 []\OT1/cmr/m/n/10 assertions: Dif-fer-entIn-di-vid-u-als, Clas-sAs-ser-tion, Ob
 -ject-Prop-ertyAsser-tion, and
  []
 
 [8] [9] [10] [11]
-Overfull \hbox (2.32169pt too wide) in paragraph at lines 871--872
+Overfull \hbox (2.32169pt too wide) in paragraph at lines 877--878
 \OT1/cmr/m/n/10 jectEx-act-Car-di-nal-ity, Data-Max-Car-di-nal-ity, DataM-in-Ca
 r-di-nal-ity, DataEx-act-
  []
@@ -1317,7 +1317,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  14048 strings out of 493921
  264482 string characters out of 3147262
- 329019 words of memory out of 3000000
+ 328019 words of memory out of 3000000
  17027 multiletter control sequences out of 15000+200000
  16692 words of font info for 60 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1334,7 +1334,7 @@ msfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on paper1.pdf (14 pages, 203049 bytes).
+Output written on paper1.pdf (14 pages, 203414 bytes).
 PDF statistics:
  103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -372,6 +372,12 @@ constraints (OWL 2 DL) [turtle syntax]:
 	\item OWL 2 construct 'DatatypeRestriction' not allowed for OWL 2 QL
 \end{itemize}
 
+A social security number is a string that matches the given regular expression. 
+The second axiom defines :SSN as an abbreviation for a datatype restriction on xsd:string. 
+The first axiom explicitly declares :SSN to be a datatype. 
+The datatype :SSN can be used just like any other datatype; 
+for example, it is used in the third axiom to define the range of the :hasSSN property. 
+
 valida data (OWL 2 DL):
 
 \begin{ex}
