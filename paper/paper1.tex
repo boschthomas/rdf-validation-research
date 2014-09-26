@@ -260,6 +260,62 @@ requirements:
   \item R-38-DEFAULT-VALUES-OF-RDF-LITERALS
 \end{itemize}
 
+\subsubsection{R-31-DEFAULT-VALUES-OF-RDF-OBJECTS}
+
+\begin{itemize}
+	\item see R-38-DEFAULT-VALUES-OF-RDF-LITERALS
+\end{itemize}
+
+\subsubsection{R-38-DEFAULT-VALUES-OF-RDF-LITERALS}
+
+rule (SPIN):
+
+Jedis have only 1 blue laser sword per default.
+Siths, in contrast, normally have 2 red laser swords.
+
+\begin{ex}
+owl:Thing
+    spin:rule [
+        a sp:Construct ;
+            sp:text """
+                CONSTRUCT {            
+                    ?this :laserSwordColor "blue"^^xsd:string ;
+                    ?this :numberLaserSwords "1"^^xsd:nonNegativeInteger . 
+                }
+                WHERE {             
+                    ?this a :Jedi .            
+                } """ ; ] .
+owl:Thing
+    spin:rule [
+        a sp:Construct ;
+            sp:text """
+                CONSTRUCT {
+                    ?this :laserSwordColor "red"^^xsd:string ;
+                    ?this :numberLaserSwords "2"^^xsd:nonNegativeInteger . 
+                }
+                WHERE {             
+                    ?this a :Sith .            
+                } """ ; ] .
+\end{ex}
+
+data (SPIN):
+
+\begin{ex}
+:Joda a :Jedi .
+:DarthSidious a :Sith .
+\end{ex}
+
+inferred triples (SPIN):
+
+\begin{ex}
+:Joda 
+    :laserSwordColor "blue"^^xsd:string ;
+    :numberLaserSwords "1"^^xsd:nonNegativeInteger .
+:DarthSidious 
+    :laserSwordColor "red"^^xsd:string ;
+    :numberLaserSwords "2"^^xsd:nonNegativeInteger .
+\end{ex}
+
 \subsection{Membership in Controlled Vocabularies}
 
 requirements:

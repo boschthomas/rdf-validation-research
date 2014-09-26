@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  26 SEP 2014 16:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  26 SEP 2014 17:49
 entering extended mode
 **paper1.tex
 (C:\Daten\Git\rdf-validation-research\paper\paper1.tex
@@ -1232,88 +1232,88 @@ File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 217.
- [3]
-Overfull \hbox (30.43268pt too wide) in paragraph at lines 268--269
+ [3] [4]
+Overfull \hbox (30.43268pt too wide) in paragraph at lines 324--325
 []\OT1/cmr/m/n/10 R-32-MEMBERSHIP-OF-RDF-OBJECTS-IN-CONTROLLED-VOCABULARIES 
  []
 
 
-Overfull \hbox (34.18266pt too wide) in paragraph at lines 269--270
+Overfull \hbox (34.18266pt too wide) in paragraph at lines 325--326
 []\OT1/cmr/m/n/10 R-39-MEMBERSHIP-OF-RDF-LITERALS-IN-CONTROLLED-VOCABULARIES 
  []
 
 
-Overfull \hbox (17.26288pt too wide) in paragraph at lines 287--295
+Overfull \hbox (17.26288pt too wide) in paragraph at lines 343--351
 \OT1/cmr/m/n/10 and as \OT1/cmtt/m/n/10 dsp:VocabularyEncodingScheme\OT1/cmr/m/
 n/10 s in DSP. \OT1/cmtt/m/n/10 dsp:VocabularyEncodingScheme
  []
 
-[4]
-Overfull \hbox (4.73596pt too wide) in paragraph at lines 343--344
+[5]
+Overfull \hbox (4.73596pt too wide) in paragraph at lines 399--400
  \OT1/cmr/bx/n/10 5.4.1 R-44-PATTERN-MATCHING-ON-RDF-LITERALS[] \OT1/cmr/m/n/10
  con-straints
  []
 
-[5] [6]
-Overfull \hbox (14.63835pt too wide) in paragraph at lines 486--487
+[6] [7]
+Overfull \hbox (14.63835pt too wide) in paragraph at lines 542--543
  \OT1/cmr/bx/n/10 5.7.1 R-49-RDF-LITERALS-HAVING-AT-MOST-ONE-LANGUAGE-
  []
 
-[7] [8]
-Overfull \hbox (46.19652pt too wide) in paragraph at lines 571--572
+[8] [9]
+Overfull \hbox (46.19652pt too wide) in paragraph at lines 627--628
 []\OT1/cmr/m/n/10 R-156-REFERENCES-TO-TRIPLES-CAUSING-THE-CONSTRAINT-VIOLATIONS
  
  []
 
 
-Overfull \hbox (14.66864pt too wide) in paragraph at lines 572--573
+Overfull \hbox (14.66864pt too wide) in paragraph at lines 628--629
 []\OT1/cmr/m/n/10 R-157-REFERENCES-TO-VALIDATION-RULES-CAUSING-CONSTRAINT-
  []
 
 
-Overfull \hbox (161.96768pt too wide) in paragraph at lines 601--642
+Overfull \hbox (161.96768pt too wide) in paragraph at lines 657--698
  [][] 
  []
 
 
-Overfull \hbox (241.8045pt too wide) in paragraph at lines 648--700
+Overfull \hbox (241.8045pt too wide) in paragraph at lines 704--756
  [][] 
  []
 
 
-Overfull \hbox (165.41986pt too wide) in paragraph at lines 777--833
+Overfull \hbox (165.41986pt too wide) in paragraph at lines 833--889
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 41.0617pt on input line 833.
+LaTeX Warning: Float too large for page by 41.0617pt on input line 889.
 
 
-Overfull \hbox (295.1778pt too wide) in paragraph at lines 839--857
+Overfull \hbox (295.1778pt too wide) in paragraph at lines 895--913
  [][] 
  []
 
 
-Overfull \hbox (234.19981pt too wide) in paragraph at lines 863--920
+Overfull \hbox (234.19981pt too wide) in paragraph at lines 919--976
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 52.0617pt on input line 920.
+LaTeX Warning: Float too large for page by 52.0617pt on input line 976.
 
-[9] [10] [11] [12]
-Overfull \hbox (8.37709pt too wide) in paragraph at lines 963--964
+[10] [11] [12] [13]
+Overfull \hbox (8.37709pt too wide) in paragraph at lines 1019--1020
 []\OT1/cmr/m/n/10 assertions: Dif-fer-entIn-di-vid-u-als, Clas-sAs-ser-tion, Ob
 -ject-Prop-ertyAsser-tion, and
  []
 
-[13] [14]
-Overfull \hbox (2.32169pt too wide) in paragraph at lines 974--975
+[14] [15]
+Overfull \hbox (2.32169pt too wide) in paragraph at lines 1030--1031
 \OT1/cmr/m/n/10 jectEx-act-Car-di-nal-ity, Data-Max-Car-di-nal-ity, DataM-in-Ca
 r-di-nal-ity, DataEx-act-
  []
 
-(C:\Daten\Git\rdf-validation-research\paper\paper1.bbl) [15]
+(C:\Daten\Git\rdf-validation-research\paper\paper1.bbl) [16]
 (C:\Daten\Git\rdf-validation-research\paper\paper1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1340,9 +1340,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmtt9.pfb>
-Output written on paper1.pdf (15 pages, 221902 bytes).
+Output written on paper1.pdf (16 pages, 224183 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
+ 113 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
