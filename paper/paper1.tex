@@ -415,6 +415,62 @@ requirements:
 	\item R-142-NEGATIVE-RANGES-OF-RDF-LITERAL-VALUES
 \end{itemize}
 
+\subsubsection{R-44-PATTERN-MATCHING-ON-RDF-LITERALS}
+
+\begin{itemize}
+	\item see 'Pattern Matching'
+\end{itemize}
+
+\subsubsection{R-45-RANGES-OF-RDF-LITERAL-VALUES}
+
+constraints (OWL 2 DL) [description logics abstract syntax]:
+
+\begin{ex}
+ToDO
+\end{ex}
+
+constraints (OWL 2 DL) [functional-style syntax]:
+
+\begin{ex}
+Declaration( Datatype( :NumberPlayersPerWorldCupTeam ) ) 
+DatatypeDefinition( 
+    :NumberPlayersPerWorldCupTeam
+    DatatypeRestriction( 
+        xsd:nonNegativeInteger 
+        xsd:minInclusive "1"^^xsd:nonNegativeInteger 
+        xsd:maxInclusive "23"^^xsd:nonNegativeInteger ) )     
+DataPropertyRange( :position :NumberPlayersPerWorldCupTeam ) 
+\end{ex}
+
+constraints (OWL 2 DL) [turtle syntax]:
+
+\begin{ex}
+:NumberPlayersPerWorldCupTeam
+    a rdfs:Datatype ;
+    owl:equivalentClass [
+        a rdfs:Datatype ;
+        owl:onDatatype xsd:nonNegativeInteger ;
+        owl:withRestrictions ( 
+            [ xsd:minInclusive "1"^^xsd:nonNegativeInteger ]
+            [ xsd:maxInclusive "23"^^xsd:nonNegativeInteger ] ) ] .
+\end{ex}
+
+The data range 'NumberPlayersPerWorldCupTeam' contains the non negative integers 1 to 23, as each world cup team can only have 23 football players at most.
+
+valida data (OWL 2 DL):
+
+\begin{ex}
+:MarioGoetze
+    :position "19"^^:NumberPlayersPerWorldCupTeam .
+\end{ex}
+
+invalida data (OWL 2 DL):
+
+\begin{ex}
+:MarioGoetze
+    :position "99"^^:NumberPlayersPerWorldCupTeam .
+\end{ex}
+
 \subsection{Language of RDF Literals}
 
 requirements:
