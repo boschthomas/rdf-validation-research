@@ -664,6 +664,65 @@ requirements:
 	\item R-120-HANDLE-RDF-COLLECTIONS
 \end{itemize}
 
+examples:
+
+\begin{itemize}
+	\item size of collection
+	\item first / last element of list must be a specific RDF literal
+	\item compare elements of collection
+	\item are collections identical?
+	\item actions on RDF lists: \url{http://www.snee.com/bobdc.blog/2014/04/rdf-lists-and-sparql.html}
+	\item 2. list element equals ''
+	\item Does the list have more than 10 elements?
+\end{itemize}
+
+constraint (SPIN):
+
+retrieves the 2. item from the list (2. student of Jedi mentor Jinn)
+
+function call (SPIN):
+
+\begin{ex}
+BIND ( :getListItem( ?list, "1"xsd:nonNegativeInteger ) AS ?listItem ) .
+\end{ex}
+
+function (SPIN):
+
+\begin{ex}
+:getListItem
+    a spin:Function ; rdfs:subClassOf spin:Functions ;
+    spin:constraint [
+        rdf:type spl:Argument ;
+        spl:predicate sp:arg1 ;
+        spl:valueType rdf:List ;
+        rdfs:comment "list" ; ] ;
+    spin:constraint [
+        rdf:type spl:Argument ;
+        spl:predicate sp:arg2 ;
+        spl:valueType xsd:nonNegativeInteger ;
+        rdfs:comment "item position (starting with 0)" ; ] ;
+    spin:body [
+        a sp:SELECT ;
+        sp:text """
+            SELECT ?item
+            WHERE {
+                ?arg1 :contents/rdf:rest{?arg2}/rdf:first ?item } """ ; ] ;
+    spin:returnType rdfs:Resource .
+\end{ex}
+
+data:
+
+\begin{ex}
+:Jinn :students 
+     ( :Xanatos :Kenobi ) . 
+\end{ex}
+
+result:
+
+\begin{ex}
+:Kenobi
+\end{ex}
+
 \subsection{RDF Shapes}
 
 requirements:
