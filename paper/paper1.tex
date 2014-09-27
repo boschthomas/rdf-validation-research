@@ -647,6 +647,31 @@ requirements:
 	\item R-67-CLASSIFY-PROPERTIES-ACCORDING-TO-OCCURRENCE
 \end{itemize}
 
+\subsubsection{R-52-NEGATIVE-OBJECT-PROPERTY-CONSTRAINTS}
+
+\begin{itemize}
+	\item see R-53-NEGATIVE-DATA-PROPERTY-CONSTRAINTS
+	\item covering approaches: ShEx, SPIN
+\end{itemize}
+
+\subsubsection{R-53-NEGATIVE-DATA-PROPERTY-CONSTRAINTS}
+
+\begin{itemize}
+	\item instances of specific class must not have some object property
+  \item OWL 2 DL: ObjectComplementOf ( DataSomeValuesFrom ( DataPropertyExpression rdfs:Literal ) )
+	\item covering approaches: ShEx, SPIN
+\end{itemize}
+
+constraint (SPIN)
+
+A matching triple has any predicate except those excluded by the '-' operator.
+
+A matching triple has any object except those excluded by the '-' operator.
+
+\begin{ex}
+
+\end{ex}
+
 \subsection{Property Groups}
 
 requirements:

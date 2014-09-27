@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  27 SEP 2014 16:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  27 SEP 2014 17:28
 entering extended mode
 **paper1.tex
 (C:\Daten\Git\rdf-validation-research\paper\paper1.tex
@@ -1270,67 +1270,67 @@ Overfull \hbox (14.63835pt too wide) in paragraph at lines 601--602
  \OT1/cmr/bx/n/10 5.7.1 R-49-RDF-LITERALS-HAVING-AT-MOST-ONE-LANGUAGE-
  []
 
-[9]
-Overfull \hbox (40.84836pt too wide) in paragraph at lines 674--675
+[9] [10]
+Overfull \hbox (40.84836pt too wide) in paragraph at lines 699--700
 []\OT1/cmr/m/n/10 actions on RDF lists: $http : / / www . snee . com / bobdc . 
 blog / 2014 / 04 / rdf-[]lists-[]and-[]sparql .
  []
 
-[10]
-Overfull \hbox (46.19652pt too wide) in paragraph at lines 745--746
+[11]
+Overfull \hbox (46.19652pt too wide) in paragraph at lines 770--771
 []\OT1/cmr/m/n/10 R-156-REFERENCES-TO-TRIPLES-CAUSING-THE-CONSTRAINT-VIOLATIONS
  
  []
 
 
-Overfull \hbox (14.66864pt too wide) in paragraph at lines 746--747
+Overfull \hbox (14.66864pt too wide) in paragraph at lines 771--772
 []\OT1/cmr/m/n/10 R-157-REFERENCES-TO-VALIDATION-RULES-CAUSING-CONSTRAINT-
  []
 
 
-Overfull \hbox (161.96768pt too wide) in paragraph at lines 775--816
- [][] 
- []
-
-[11]
-Overfull \hbox (241.8045pt too wide) in paragraph at lines 822--874
+Overfull \hbox (161.96768pt too wide) in paragraph at lines 800--841
  [][] 
  []
 
 
-Overfull \hbox (231.03313pt too wide) in paragraph at lines 951--1007
+Overfull \hbox (241.8045pt too wide) in paragraph at lines 847--899
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 41.0617pt on input line 1007.
-
-
-Overfull \hbox (295.1778pt too wide) in paragraph at lines 1013--1031
+Overfull \hbox (231.03313pt too wide) in paragraph at lines 976--1032
  [][] 
  []
 
 
-Overfull \hbox (255.10646pt too wide) in paragraph at lines 1037--1094
+LaTeX Warning: Float too large for page by 41.0617pt on input line 1032.
+
+
+Overfull \hbox (295.1778pt too wide) in paragraph at lines 1038--1056
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 52.0617pt on input line 1094.
+Overfull \hbox (255.10646pt too wide) in paragraph at lines 1062--1119
+ [][] 
+ []
 
 
-Overfull \hbox (8.37709pt too wide) in paragraph at lines 1137--1138
+LaTeX Warning: Float too large for page by 52.0617pt on input line 1119.
+
+[12] [13] [14] [15]
+Overfull \hbox (8.37709pt too wide) in paragraph at lines 1162--1163
 []\OT1/cmr/m/n/10 assertions: Dif-fer-entIn-di-vid-u-als, Clas-sAs-ser-tion, Ob
 -ject-Prop-ertyAsser-tion, and
  []
 
-[12] [13] [14] [15]
-Overfull \hbox (2.32169pt too wide) in paragraph at lines 1148--1149
+[16] [17]
+Overfull \hbox (2.32169pt too wide) in paragraph at lines 1173--1174
 \OT1/cmr/m/n/10 jectEx-act-Car-di-nal-ity, Data-Max-Car-di-nal-ity, DataM-in-Ca
 r-di-nal-ity, DataEx-act-
  []
 
-(C:\Daten\Git\rdf-validation-research\paper\paper1.bbl [16] [17]) [18]
+(C:\Daten\Git\rdf-validation-research\paper\paper1.bbl) [18]
 (C:\Daten\Git\rdf-validation-research\paper\paper1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1339,11 +1339,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  14053 strings out of 493921
  264551 string characters out of 3147262
- 328092 words of memory out of 3000000
+ 328022 words of memory out of 3000000
  17031 multiletter control sequences out of 15000+200000
  17037 words of font info for 61 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 55i,8n,54p,870b,304s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,8n,54p,870b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTe
@@ -1357,7 +1357,7 @@ m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmtt9.pfb>
-Output written on paper1.pdf (18 pages, 230235 bytes).
+Output written on paper1.pdf (18 pages, 231123 bytes).
 PDF statistics:
  119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
