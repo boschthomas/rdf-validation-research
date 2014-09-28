@@ -132,8 +132,8 @@ Allerding wäre wie bspw. in
 \section{research questions}
 
 \begin{itemize}
-	\item for which RDF validation requirement the expressivity of DL-LiteA respectively OWL 2 QL is sufficient?
-	\item for which RDF validation requirement additional constraint languages are needed?
+	\item for which RDF validation requirements the expressivity of DL-Lite$_A$ respectively OWL 2 QL is sufficient?
+	\item for which RDF validation requirements additional constraint languages are needed?
 	\item which constraint languages are suitable to express remaining requirements?
 	\item what are the effects of these constraints regarding complexity?
 \end{itemize}
@@ -174,28 +174,27 @@ R-11-DISJOINT-DATA-PROPERTIES-CLASS-SPECIFIC
 constraint (ShEx):
 
 \begin{ex}
-(foaf:name xsd:string  | foaf:givenName xsd:string+, foaf:familyName xsd:string)
+<Human> { (  
+    foaf:name xsd:string | foaf:givenName xsd:string+ , 
+    foaf:familyName xsd:string ) }
 \end{ex}
 
-valid data (ShEx):
+Individuals matching the 'Human' data shape:
 
 \begin{ex}
-<Anakin>
-    foaf:name "Anakin Skywalker" ;
-		foaf:familyName "Skywalker" .
-\end{ex}
-
-\begin{ex}
-<Anakin>
+:Han
+    foaf:name "Han Solo" ;
+    foaf:familyName "Solo" .
+:Anakin
     foaf:givenName "Anakin" ;
-		foaf:givenName "Darth" ;
+    foaf:givenName "Darth" ;
     foaf:familyName "Skywalker" .
 \end{ex}
 
-invalid data (ShEx):
+Individual not matching the 'Human' data shape:
 
 \begin{ex}
-<Anakin>
+:Anakin
     foaf:name "Anakin Skywalker" ;
     foaf:givenName "Anakin" ;
     foaf:familyName "Skywalker" .
@@ -218,38 +217,38 @@ R-13-DISJOINT-GROUP-OF-PROPERTIES-CLASS-SPECIFIC
 	\item with OWL 2, inclusive OR of property groups would be possible to express, but not exclusive OR of property groups
 \end{itemize}
 
-A \textless Human\textgreater has either a name or at least 1 given name and 1 family name.
-
 constraint (ShEx):
+
+A \textless Human\textgreater has either a name or at least 1 given name and 1 family name.
 
 \begin{ex}
 <Human> {                           
     (                                    
             foaf:name xsd:string              
         |                                   
-            foaf:givenName xsd:string+,      
+            foaf:givenName xsd:string+ ,      
             foaf:familyName xsd:string
     )
 }
 \end{ex}
 
-valid data (ShEx):
+Individuals matching the 'Human' data shape:
 
 \begin{ex}
-<Anakin>
+:Anakin
     foaf:givenName "Anakin" ;
     foaf:familyName "Skywalker" .
 \end{ex}
 
 \begin{ex}
-<Anakin>
+:Anakin
     foaf:name "Anakin Skywalker" .
 \end{ex}
 
-invalid data (ShEx):
+Individual not matching the 'Human' data shape:
 
 \begin{ex}
-<Anakin>
+:Anakin
     foaf:givenName "Anakin" ;
     foaf:familyName "Skywalker" ;
     foaf:name "Anakin Skywalker" .
@@ -302,14 +301,14 @@ owl:Thing
                 } """ ; ] .
 \end{ex}
 
-data (SPIN):
+data:
 
 \begin{ex}
 :Joda a :Jedi .
 :DarthSidious a :Sith .
 \end{ex}
 
-inferred triples (SPIN):
+inferred triples:
 
 \begin{ex}
 :Joda 
@@ -318,6 +317,80 @@ inferred triples (SPIN):
 :DarthSidious 
     :laserSwordColor "red"^^xsd:string ;
     :numberLaserSwords "2"^^xsd:nonNegativeInteger .
+\end{ex}
+
+\subsection{Allowed and Not Allowed Values}
+
+requirements:
+
+\begin{itemize}
+	\item R-30-ALLOWED-VALUES-FOR-RDF-OBJECTS
+  \item R-37-ALLOWED-VALUES-FOR-RDF-LITERALS
+  \item R-33-NEGATIVE-OBJECT-CONSTRAINTS
+	\item R-200-NEGATIVE-LITERAL-CONSTRAINTS
+\end{itemize}
+
+\subsubsection{R-30-ALLOWED-VALUES-FOR-RDF-OBJECTS}
+
+\begin{itemize}
+	\item covering approaches:  OWL 2 DL (ObjectOneOf) 
+\end{itemize}
+
+\subsubsection{R-37-ALLOWED-VALUES-FOR-RDF-LITERAL}
+
+\begin{itemize}
+	\item covering approaches:  OWL 2 DL (DataOneOf) 
+\end{itemize}
+
+\subsubsection{R-33-NEGATIVE-OBJECT-CONSTRAINTS}
+
+\begin{itemize}
+	\item covering approaches:  ShEx, SPARQL, SPIN
+	\item analogous to R-200-NEGATIVE-LITERAL-CONSTRAINTS
+\end{itemize}
+
+\subsubsection{R-200-NEGATIVE-LITERAL-CONSTRAINTS}
+
+\begin{itemize}
+	\item definition: A matching triple has any literal except those explicitly excluded
+	\item covering approaches:  ShEx, SPARQL, SPIN
+\end{itemize}
+
+constraint (ShEx):
+
+A matching triple has any literal except those excluded by the '-' operator.
+
+\begin{ex}
+<Jedi> {
+    :feelingForce 'true'^^xsd:boolean ,
+    :attitute 'good'^^xsd:string ,
+    :laserSwordColor 'blue'^^xsd:string ,
+    :numberLaserSwords '1'^^xsd:nonNegativeInteger }
+<Sith> {
+    :feelingForce 'true'^^xsd:boolean ,
+    :attitute - 'good'^^xsd:string ,
+    :laserSwordColor - 'blue'^^xsd:string ,
+    :numberLaserSwords '2'^^xsd:nonNegativeInteger }
+\end{ex}
+
+Individual matching the 'Jedi' data shape:
+
+\begin{ex}
+:Joda 
+    :feelingForce 'true'^^xsd:boolean ;
+    :attitute 'good'^^xsd:string ;
+    :laserSwordColor 'blue'^^xsd:string ,
+    :numberLaserSwords '1'^^xsd:nonNegativeInteger .
+\end{ex}
+
+Individual matching the 'Sith' data shape:
+
+\begin{ex}
+:DarthSidious
+    :feelingForce 'true'^^xsd:boolean ;
+    :attitute 'evil'^^xsd:string ;
+    :laserSwordColor 'red'^^xsd:string ,
+    :numberLaserSwords '2'^^xsd:nonNegativeInteger . 
 \end{ex}
 
 \subsection{Membership in Controlled Vocabularies}
@@ -655,11 +728,9 @@ requirements:
 	\item covering approaches: ShEx, SPIN
 \end{itemize}
 
-constraint (SPIN)
+constraint (ShEx):
 
 A matching triple has any predicate except those excluded by the '-' operator.
-
-constraint (ShEx):
 
 \begin{ex}
 <FeelingForce> {
@@ -726,6 +797,8 @@ requirements:
 \begin{itemize}
 	\item R-120-HANDLE-RDF-COLLECTIONS
 \end{itemize}
+
+\subsubsection{R-120-HANDLE-RDF-COLLECTIONS}
 
 examples:
 
@@ -1034,7 +1107,7 @@ R-29-CLASS-SPECIFIC-RANGE-OF-RDF-OBJECTS & SPIN, RS \\
 R-30-ALLOWED-VALUES-FOR-RDF-OBJECTS (ObjectOneOf) & OWL 2 DL \\
 R-31-DEFAULT-VALUES-OF-RDF-OBJECTS & SPIN, BF, RS \\
 R-32-MEMBERSHIP-OF-RDF-OBJECTS-IN-CONTROLLED-VOCABULARIES & DSP, SPIN \\
-R-33-NEGATIVE-OBJECT-CONSTRAINTS \\
+R-33-NEGATIVE-OBJECT-CONSTRAINTS & ShEx, SPIN \\
 R-34-AVAILABLE-CLASS-DEFINITION & ShEx, SPIN \\
 R-36-CLASS-SPECIFIC-RANGE-OF-RDF-LITERALS & ShEx, BF, SPIN \\
 R-37-ALLOWED-VALUES-FOR-RDF-LITERALS (DataOneOf) & OWL 2 DL \\
@@ -1152,6 +1225,7 @@ R-189-ADD-ANNOTATIONS-TO-CONSTRAINT-VIOLATION-OBJECTS & \\
 R-191-SHAPES-RELATED-TO-TYPES & \\
 R-193-MULTIPLE-CONSTRAINT-VALIDATION-EXECUTION-LEVELS & \\
 R-194-PROVIDE-STRING-FUNCTIONS-FOR-RDF-LITERALS & SPIN \\
+R-200-NEGATIVE-LITERAL-CONSTRAINTS & ShEx, SPARQL, SPIN \\
 \hr
 \end{tabular}
 \end{table}
