@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  28 SEP 2014 14:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  28 SEP 2014 17:21
 entering extended mode
 **paper1.tex
 (C:\Daten\Git\rdf-validation-research\paper\paper1.tex
@@ -1259,84 +1259,89 @@ Overfull \hbox (24.62442pt too wide) in paragraph at lines 534--535
  \OT1/cmr/bx/n/10 5.5.2 R-141-NEGATIVE-PATTERN-MATCHING-ON-RDF-LITERALS[]
  []
 
-[8]
-Overfull \hbox (26.26501pt too wide) in paragraph at lines 594--595
+[8] [9]
+Overfull \hbox (16.15224pt too wide) in paragraph at lines 664--664
+ \OT1/cmr/bx/n/10 5.6.4 R-194-PROVIDE-STRING-FUNCTIONS-FOR-RDF-LITERALS[] 
+ []
+
+
+Overfull \hbox (26.26501pt too wide) in paragraph at lines 670--671
 \OT1/cmr/m/n/10 XSD con-strain-ing facets: $http : / / www . w3 . org / TR / 20
 01 / REC-[]xmlschema-[]2-[]20010502 /
  []
 
-[9]
-Overfull \hbox (14.63835pt too wide) in paragraph at lines 674--675
+[10]
+Overfull \hbox (14.63835pt too wide) in paragraph at lines 750--751
  \OT1/cmr/bx/n/10 5.8.1 R-49-RDF-LITERALS-HAVING-AT-MOST-ONE-LANGUAGE-
  []
 
-[10] [11]
-Overfull \hbox (40.84836pt too wide) in paragraph at lines 810--811
+[11] [12]
+Overfull \hbox (40.84836pt too wide) in paragraph at lines 886--887
 []\OT1/cmr/m/n/10 actions on RDF lists: $http : / / www . snee . com / bobdc . 
 blog / 2014 / 04 / rdf-[]lists-[]and-[]sparql .
  []
 
-[12]
-Overfull \hbox (46.19652pt too wide) in paragraph at lines 881--882
+[13]
+Overfull \hbox (46.19652pt too wide) in paragraph at lines 957--958
 []\OT1/cmr/m/n/10 R-156-REFERENCES-TO-TRIPLES-CAUSING-THE-CONSTRAINT-VIOLATIONS
  
  []
 
 
-Overfull \hbox (14.66864pt too wide) in paragraph at lines 882--883
+Overfull \hbox (14.66864pt too wide) in paragraph at lines 958--959
 []\OT1/cmr/m/n/10 R-157-REFERENCES-TO-VALIDATION-RULES-CAUSING-CONSTRAINT-
  []
 
 
-Overfull \hbox (161.96768pt too wide) in paragraph at lines 911--952
+Overfull \hbox (161.96768pt too wide) in paragraph at lines 987--1028
  [][] 
  []
 
-[13]
-Overfull \hbox (241.8045pt too wide) in paragraph at lines 958--1010
- [][] 
- []
-
-
-Overfull \hbox (231.03313pt too wide) in paragraph at lines 1087--1143
+[14]
+Overfull \hbox (241.8045pt too wide) in paragraph at lines 1034--1086
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 41.0617pt on input line 1143.
-
-
-Overfull \hbox (295.1778pt too wide) in paragraph at lines 1149--1167
+Overfull \hbox (231.03313pt too wide) in paragraph at lines 1163--1219
  [][] 
  []
 
 
-Overfull \hbox (255.10646pt too wide) in paragraph at lines 1173--1231
+LaTeX Warning: Float too large for page by 41.0617pt on input line 1219.
+
+
+Overfull \hbox (295.1778pt too wide) in paragraph at lines 1225--1243
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 63.0617pt on input line 1231.
+Overfull \hbox (255.10646pt too wide) in paragraph at lines 1249--1307
+ [][] 
+ []
 
 
-Overfull \hbox (0.29376pt too wide) in paragraph at lines 1291--1292
+LaTeX Warning: Float too large for page by 63.0617pt on input line 1307.
+
+
+Overfull \hbox (0.29376pt too wide) in paragraph at lines 1367--1368
 []\OT1/cmr/m/n/10 ShEx as an in-stan-ti-a-tion of con-straint lan-guages which 
 are high-level, human-
  []
 
-[14] [15] [16] [17] [18] [19]
-Overfull \hbox (8.37709pt too wide) in paragraph at lines 1337--1338
+[15] [16] [17] [18] [19] [20]
+Overfull \hbox (8.37709pt too wide) in paragraph at lines 1413--1414
 []\OT1/cmr/m/n/10 assertions: Dif-fer-entIn-di-vid-u-als, Clas-sAs-ser-tion, Ob
 -ject-Prop-ertyAsser-tion, and
  []
 
 
-Overfull \hbox (2.32169pt too wide) in paragraph at lines 1348--1349
+Overfull \hbox (2.32169pt too wide) in paragraph at lines 1424--1425
 \OT1/cmr/m/n/10 jectEx-act-Car-di-nal-ity, Data-Max-Car-di-nal-ity, DataM-in-Ca
 r-di-nal-ity, DataEx-act-
  []
 
-(C:\Daten\Git\rdf-validation-research\paper\paper1.bbl [20]) [21]
+(C:\Daten\Git\rdf-validation-research\paper\paper1.bbl [21]) [22]
 (C:\Daten\Git\rdf-validation-research\paper\paper1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1345,7 +1350,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  14056 strings out of 493921
  264640 string characters out of 3147262
- 330063 words of memory out of 3000000
+ 330070 words of memory out of 3000000
  17034 multiletter control sequences out of 15000+200000
  17037 words of font info for 61 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1363,9 +1368,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmtt9.pfb>
-Output written on paper1.pdf (21 pages, 237378 bytes).
+Output written on paper1.pdf (22 pages, 239759 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
+ 132 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
