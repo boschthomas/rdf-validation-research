@@ -358,28 +358,28 @@ requirements:
 
 constraint (ShEx):
 
-A matching triple has any literal except those excluded by the '-' operator.
+A matching triple has any literal except those excluded by the '!' operator.
 
 \begin{ex}
 <Jedi> {
-    :feelingForce 'true'^^xsd:boolean ,
-    :attitute 'good'^^xsd:string ,
-    :laserSwordColor 'blue'^^xsd:string ,
-    :numberLaserSwords '1'^^xsd:nonNegativeInteger }
+    :feelingForce (true) ,
+    :attitute ('good') ,
+    :laserSwordColor ('blue') ,
+    :numberLaserSwords ('1'^^xsd:nonNegativeInteger) }
 <Sith> {
-    :feelingForce 'true'^^xsd:boolean ,
-    :attitute - 'good'^^xsd:string ,
-    :laserSwordColor - 'blue'^^xsd:string ,
-    :numberLaserSwords '2'^^xsd:nonNegativeInteger }
+    :feelingForce (true) ,
+    :attitute (!'good') ,
+    :laserSwordColor (!'blue') ,
+    :numberLaserSwords ('2'^^xsd:nonNegativeInteger) }
 \end{ex}
 
 Individual matching the 'Jedi' data shape:
 
 \begin{ex}
 :Joda 
-    :feelingForce 'true'^^xsd:boolean ;
-    :attitute 'good'^^xsd:string ;
-    :laserSwordColor 'blue'^^xsd:string ,
+    :feelingForce (true) ;
+    :attitute ('good') ;
+    :laserSwordColor ('blue') ,
     :numberLaserSwords '1'^^xsd:nonNegativeInteger .
 \end{ex}
 
@@ -387,9 +387,9 @@ Individual matching the 'Sith' data shape:
 
 \begin{ex}
 :DarthSidious
-    :feelingForce 'true'^^xsd:boolean ;
-    :attitute 'evil'^^xsd:string ;
-    :laserSwordColor 'red'^^xsd:string ,
+    :feelingForce (true) ;
+    :attitute ('evil') ;
+    :laserSwordColor ('red') ,
     :numberLaserSwords '2'^^xsd:nonNegativeInteger . 
 \end{ex}
 
