@@ -806,25 +806,25 @@ requirements:
 
 constraint (ShEx):
 
-A matching triple has any predicate except those excluded by the '-' operator.
+A matching triple has any predicate except those excluded by the '!' operator.
 
 \begin{ex}
 <FeelingForce> {
-    :feelingForce 'true'^^xsd:boolean ,
+    :feelingForce (true) ,
     :attitute xsd:string }
 <JediMentor> {
-    :feelingForce 'true'^^xsd:boolean ,
-    :attitute 'good'^^xsd:string ,
+    :feelingForce (true) ,
+    :attitute ('good') ,
     :laserSwordColor xsd:string ,
     :numberLaserSwords xsd:nonNegativeInteger ,
     :mentorOf @<JediStudent> ,
-    - :studentOf @<JediMentor> }
+   !:studentOf @<JediMentor> }
 <JediStudent> {
-    :feelingForce 'true'^^xsd:boolean ,
-    :attitute 'good'^^xsd:string ,
+    :feelingForce (true) ,
+    :attitute ('good') ,
     :laserSwordColor xsd:string ,
     :numberLaserSwords xsd:nonNegativeInteger ,
-    - :mentorOf @<JediStudent> ,
+   !:mentorOf @<JediStudent> ,
     :studentOf @<JediMentor> }
 \end{ex}
 
@@ -832,10 +832,10 @@ individuals matching 'FeelingForce' and 'JediMentor' data shapes:
 
 \begin{ex}
 :Obi-Wan 
-    :feelingForce 'true'^^xsd:boolean ;
-    :attitute 'good'^^xsd:string ;
-    :laserSwordColor 'blue'^^xsd:string ,
-    :numberLaserSwords '1'^^xsd:nonNegativeInteger ,
+    :feelingForce true ;
+    :attitute 'good' ;
+    :laserSwordColor 'blue' ;
+    :numberLaserSwords '1'^^xsd:nonNegativeInteger ;
     :mentorOf :Anakin .
 \end{ex}
 
@@ -843,11 +843,11 @@ individuals matching 'FeelingForce' and 'JediStudent' data shapes:
 
 \begin{ex}
 :Anakin 
-    :feelingForce 'true'^^xsd:boolean ;
-    :attitute 'good'^^xsd:string ;
-    :laserSwordColor 'blue'^^xsd:string ,
-    :numberLaserSwords '1'^^xsd:nonNegativeInteger ,
-    :studentOf :Obi-Wan . 
+    :feelingForce true ;
+    :attitute 'good' ;
+    :laserSwordColor 'blue' ;
+    :numberLaserSwords '1'^^xsd:nonNegativeInteger ;
+    :studentOf :Obi-Wan .
 \end{ex}
 
 \subsubsection{R-53-NEGATIVE-DATA-PROPERTY-CONSTRAINTS}
