@@ -360,6 +360,8 @@ constraint (ShEx):
 
 A matching triple has any literal except those excluded by the '!' operator.
 
+\url{http://w3.org/brief/Mzk2}
+
 \begin{ex}
 <Jedi> {
     :feelingForce (true) ,
@@ -368,8 +370,8 @@ A matching triple has any literal except those excluded by the '!' operator.
     :numberLaserSwords ('1'^^xsd:nonNegativeInteger) }
 <Sith> {
     :feelingForce (true) ,
-    :attitute (!'good') ,
-    :laserSwordColor (!'blue') ,
+   !:attitute ('good') ,
+   !:laserSwordColor ('blue') ,
     :numberLaserSwords ('2'^^xsd:nonNegativeInteger) }
 \end{ex}
 
@@ -377,9 +379,9 @@ Individual matching the 'Jedi' data shape:
 
 \begin{ex}
 :Joda 
-    :feelingForce (true) ;
-    :attitute ('good') ;
-    :laserSwordColor ('blue') ,
+    :feelingForce true ;
+    :attitute 'good' ;
+    :laserSwordColor 'blue' ;
     :numberLaserSwords '1'^^xsd:nonNegativeInteger .
 \end{ex}
 
@@ -387,9 +389,9 @@ Individual matching the 'Sith' data shape:
 
 \begin{ex}
 :DarthSidious
-    :feelingForce (true) ;
-    :attitute ('evil') ;
-    :laserSwordColor ('red') ,
+    :feelingForce true ;
+    :attitute 'evil' ;
+    :laserSwordColor 'red' ;
     :numberLaserSwords '2'^^xsd:nonNegativeInteger . 
 \end{ex}
 
@@ -807,6 +809,8 @@ requirements:
 constraint (ShEx):
 
 A matching triple has any predicate except those excluded by the '!' operator.
+
+\url{http://w3.org/brief/Mzk0}
 
 \begin{ex}
 <FeelingForce> {

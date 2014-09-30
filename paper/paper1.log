@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  29 SEP 2014 15:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  30 SEP 2014 11:20
 entering extended mode
 **paper1.tex
 (C:\Daten\Git\rdf-validation-research\paper\paper1.tex
@@ -1236,127 +1236,127 @@ File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 222.
  [3] [4] [5]
-Overfull \hbox (30.43268pt too wide) in paragraph at lines 401--402
+Overfull \hbox (30.43268pt too wide) in paragraph at lines 403--404
 []\OT1/cmr/m/n/10 R-32-MEMBERSHIP-OF-RDF-OBJECTS-IN-CONTROLLED-VOCABULARIES 
  []
 
 
-Overfull \hbox (34.18266pt too wide) in paragraph at lines 402--403
+Overfull \hbox (34.18266pt too wide) in paragraph at lines 404--405
 []\OT1/cmr/m/n/10 R-39-MEMBERSHIP-OF-RDF-LITERALS-IN-CONTROLLED-VOCABULARIES 
  []
 
 
-Overfull \hbox (17.26288pt too wide) in paragraph at lines 420--428
+Overfull \hbox (17.26288pt too wide) in paragraph at lines 422--430
 \OT1/cmr/m/n/10 and as \OT1/cmtt/m/n/10 dsp:VocabularyEncodingScheme\OT1/cmr/m/
 n/10 s in DSP. \OT1/cmtt/m/n/10 dsp:VocabularyEncodingScheme
  []
 
 [6]
-Overfull \hbox (11.84708pt too wide) in paragraph at lines 476--477
+Overfull \hbox (11.84708pt too wide) in paragraph at lines 478--479
  \OT1/cmr/bx/n/10 5.5.1 R-44-PATTERN-MATCHING-ON-RDF-LITERALS[] \OT1/cmr/m/n/10
  Cov-er-ing ap-
  []
 
 [7]
-Overfull \hbox (24.62442pt too wide) in paragraph at lines 534--535
+Overfull \hbox (24.62442pt too wide) in paragraph at lines 536--537
  \OT1/cmr/bx/n/10 5.5.2 R-141-NEGATIVE-PATTERN-MATCHING-ON-RDF-LITERALS[]
  []
 
 [8] [9]
-Overfull \hbox (16.15224pt too wide) in paragraph at lines 664--664
+Overfull \hbox (16.15224pt too wide) in paragraph at lines 666--666
  \OT1/cmr/bx/n/10 5.6.4 R-194-PROVIDE-STRING-FUNCTIONS-FOR-RDF-LITERALS[] 
  []
 
 
-Overfull \hbox (26.26501pt too wide) in paragraph at lines 670--671
+Overfull \hbox (26.26501pt too wide) in paragraph at lines 672--673
 \OT1/cmr/m/n/10 XSD con-strain-ing facets: $http : / / www . w3 . org / TR / 20
 01 / REC-[]xmlschema-[]2-[]20010502 /
  []
 
 [10]
-Overfull \hbox (14.63835pt too wide) in paragraph at lines 750--751
+Overfull \hbox (14.63835pt too wide) in paragraph at lines 752--753
  \OT1/cmr/bx/n/10 5.8.1 R-49-RDF-LITERALS-HAVING-AT-MOST-ONE-LANGUAGE-
  []
 
 [11] [12]
-Overfull \hbox (40.84836pt too wide) in paragraph at lines 886--887
+Overfull \hbox (40.84836pt too wide) in paragraph at lines 890--891
 []\OT1/cmr/m/n/10 actions on RDF lists: $http : / / www . snee . com / bobdc . 
 blog / 2014 / 04 / rdf-[]lists-[]and-[]sparql .
  []
 
 [13]
-Overfull \hbox (46.19652pt too wide) in paragraph at lines 957--958
+Overfull \hbox (46.19652pt too wide) in paragraph at lines 961--962
 []\OT1/cmr/m/n/10 R-156-REFERENCES-TO-TRIPLES-CAUSING-THE-CONSTRAINT-VIOLATIONS
  
  []
 
 
-Overfull \hbox (14.66864pt too wide) in paragraph at lines 958--959
+Overfull \hbox (14.66864pt too wide) in paragraph at lines 962--963
 []\OT1/cmr/m/n/10 R-157-REFERENCES-TO-VALIDATION-RULES-CAUSING-CONSTRAINT-
  []
 
 
-Overfull \hbox (161.96768pt too wide) in paragraph at lines 987--1028
+Overfull \hbox (161.96768pt too wide) in paragraph at lines 991--1032
  [][] 
  []
 
 [14]
-Overfull \hbox (241.8045pt too wide) in paragraph at lines 1034--1086
+Overfull \hbox (241.8045pt too wide) in paragraph at lines 1038--1090
  [][] 
  []
 
 
-Overfull \hbox (231.03313pt too wide) in paragraph at lines 1163--1219
+Overfull \hbox (231.03313pt too wide) in paragraph at lines 1167--1223
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 41.0617pt on input line 1219.
+LaTeX Warning: Float too large for page by 41.0617pt on input line 1223.
 
 
-Overfull \hbox (295.1778pt too wide) in paragraph at lines 1225--1243
+Overfull \hbox (295.1778pt too wide) in paragraph at lines 1229--1247
  [][] 
  []
 
 
-Overfull \hbox (255.10646pt too wide) in paragraph at lines 1249--1307
+Overfull \hbox (255.10646pt too wide) in paragraph at lines 1253--1311
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 63.0617pt on input line 1307.
+LaTeX Warning: Float too large for page by 63.0617pt on input line 1311.
 
 
-Overfull \hbox (223.16507pt too wide) in paragraph at lines 1313--1361
+Overfull \hbox (223.16507pt too wide) in paragraph at lines 1317--1365
  [][] 
  []
 
 
-Overfull \hbox (360.79106pt too wide) in paragraph at lines 1367--1487
+Overfull \hbox (360.79106pt too wide) in paragraph at lines 1371--1491
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 745.0617pt on input line 1487.
+LaTeX Warning: Float too large for page by 745.0617pt on input line 1491.
 
 
-Overfull \hbox (360.79106pt too wide) in paragraph at lines 1493--1613
+Overfull \hbox (360.79106pt too wide) in paragraph at lines 1497--1617
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 745.0617pt on input line 1613.
+LaTeX Warning: Float too large for page by 745.0617pt on input line 1617.
 
 
-Overfull \hbox (360.79106pt too wide) in paragraph at lines 1619--1739
+Overfull \hbox (360.79106pt too wide) in paragraph at lines 1623--1743
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 745.0617pt on input line 1739.
+LaTeX Warning: Float too large for page by 745.0617pt on input line 1743.
 
 
-Overfull \hbox (0.29376pt too wide) in paragraph at lines 1752--1753
+Overfull \hbox (0.29376pt too wide) in paragraph at lines 1756--1757
 []\OT1/cmr/m/n/10 ShEx as an in-stan-ti-a-tion of con-straint lan-guages which 
 are high-level, human-
  []
@@ -1365,13 +1365,13 @@ are high-level, human-
 LaTeX Warning: Marginpar on page 15 moved.
 
 [15] [16] [17] [18] [19] [20] [21] [22] [23] [24]
-Overfull \hbox (8.37709pt too wide) in paragraph at lines 1811--1812
+Overfull \hbox (8.37709pt too wide) in paragraph at lines 1815--1816
 []\OT1/cmr/m/n/10 assertions: Dif-fer-entIn-di-vid-u-als, Clas-sAs-ser-tion, Ob
 -ject-Prop-ertyAsser-tion, and
  []
 
 
-Overfull \hbox (2.32169pt too wide) in paragraph at lines 1822--1823
+Overfull \hbox (2.32169pt too wide) in paragraph at lines 1826--1827
 \OT1/cmr/m/n/10 jectEx-act-Car-di-nal-ity, Data-Max-Car-di-nal-ity, DataM-in-Ca
 r-di-nal-ity, DataEx-act-
  []
@@ -1385,7 +1385,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  14131 strings out of 493921
  266421 string characters out of 3147262
- 424069 words of memory out of 3000000
+ 423069 words of memory out of 3000000
  17109 multiletter control sequences out of 15000+200000
  17037 words of font info for 61 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1403,7 +1403,7 @@ m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmtt9.pfb>
-Output written on paper1.pdf (25 pages, 252848 bytes).
+Output written on paper1.pdf (25 pages, 252896 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
