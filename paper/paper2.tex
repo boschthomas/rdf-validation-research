@@ -1123,6 +1123,65 @@ YES → avoid confusion
 Non-Unique Naming Assumption
 You can't easily use OWL to even do cardinality checking. For example, suppose you assert that :hasFather is a functional property, and you have the triples :Luke :hasFather :Anakin and :Luke :hasFather :Darth.An OWL reasoner will invoke the Non-Unique Naming Assumption to infer that :Anakin owl:sameAs :Darth.
 
+\subsection{example validation + inferencing with CWA/UNA}
+
+\begin{ex}
+Let's take an example schema:
+
+  my:IssueShape {
+    x:submitter @my:SubmitterShape
+  }
+  my:SubmitterShape {
+    foaf:name LITERAL
+  }
+
+We can express that as OWL CWA/UNA like so:
+
+  x:submitter a owl:ObjectProperty .
+ 
+  my:IssueType
+    rdfs:subClassOf
+      [ owl:onProperty x:submitter ;
+        owl:cardinality 1 ] ,
+      [ owl:onProperty x:submitter ;
+        owl:allValuesFrom my:SubmitterType ] .
+ 
+  foaf:givenName a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+  foaf:familyName a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+ 
+  my:SubmitterType
+    rdfs:subClassOf
+      [ owl:onProperty foaf:givenName ;
+        owl:cardinality 1 ] ,
+      [ owl:onProperty foaf:familyName ;
+        owl:cardinality 1 ] .
+
+A piece of instance data like
+
+  <Issue1> x:submitter _:submitter .
+  _:submitter foaf:givenName "Bob" .
+
+has two untyped nodes. In order to validate, We posit that:
+
+  <Isseu1> a my:IssueType .
+
+and the system then gets to infer that:
+
+  _:submitter a my:SubmitterType .
+
+(Of course, this could have been an anonymous class in the OWL, but I
+gave it a label for clarity here.) CWA validation leads us to believe
+that the foaf:familyName property is missing for _:submitter.
+
+If any arcs are missing from _:submitter other than a type arc, those
+are considered validation errors, but in order to even validate, I
+believe that OWL UNA/CWA (e.g. ICV) is required to do type inferencing
+in order to get anything done. It was this juxtaposition that I was
+trying to point out.
+\end{ex}
+
 \section{Modularize and Separate Semantics and Constraints}
 
 semantics (OWL ontologies)
