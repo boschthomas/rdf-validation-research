@@ -1378,6 +1378,30 @@ Even StarDog ICV can be used in this manner.  All you have to do is have an over
 
 see R-201-SEPARATION-OF-CONSTRAINTS-AND-ONTOLOGY-SEMANTICS
 
+\section{separate constraints and axioms}
+
+\subsection{disjointness}
+
+A disjointness constraint is actually different (both
+semantically and in practice) from the OWL disjointness axiom. I see no
+problem with adding disjointness to an AP where such disjointness is
+needed in the applications that will use the AP (data creation, quality
+control, documentation of your "data set"). In fact, I believe I have
+seen such constraints being used in validation functions that use
+SPARQL, and it doesn't seem to be a problem. As we know (and Tom and I
+will show some examples in Austin), disjointness in the open world can
+be ill-advised precisely because it does not mean the same as
+disjointness in the closed world. In the closed world it may be a common
+requirement; in the open world it can greatly interfere with data
+compatibility. The same is true of cardinality (which has a very
+different meaning in the open world).
+
+I do not see APs as duplicating the OWL axioms -- although the natural
+language terms we use may be the same, the functionality is quite different.
+
+Obviously, this is what we need to keep in mind as we go through our use
+cases. I don't know what problems might arise when we get into the details.
+
 \section{Diskussionen}
 
 Man müsste mit der Behauptung "vollständig gegen OWL 2 Konstrukte"

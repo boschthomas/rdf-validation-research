@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  3 OCT 2014 12:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  4 OCT 2014 10:13
 entering extended mode
 **paper2.tex
 (C:\Daten\Git\rdf-validation-research\paper\paper2.tex
@@ -1278,7 +1278,7 @@ Runaway argument?
 ! Paragraph ended before \align* was complete.
 <to be read again> 
                    \par 
-l.1390 
+l.1414 
        
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1287,7 +1287,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1390 
+l.1414 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1295,7 +1295,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.1390 
+l.1414 
        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1306,7 +1306,7 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \par 
-l.1390 
+l.1414 
        
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -1314,7 +1314,7 @@ So I shall assume that you typed `$$' both times.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1391 (1) \exists
+l.1415 (1) \exists
                    teachesStudent.\top \sqsubseteq TeacherUniversity
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1322,7 +1322,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1392 
+l.1416 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1330,7 +1330,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1393 (2) TeacherUniversity \sqsubseteq
+l.1417 (2) TeacherUniversity \sqsubseteq
                                          EmployeeUniversity
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1338,7 +1338,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1394 
+l.1418 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1346,7 +1346,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1395 (3) EmployeeUniversity \sqsubseteq
+l.1419 (3) EmployeeUniversity \sqsubseteq
                                           \neg EmployeeCompany
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1354,15 +1354,16 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1396 
+l.1420 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+[24]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1405 (7) + (3) = (8) \neg
+l.1429 (7) + (3) = (8) \neg
                             EmployeeCompany(eckert)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1370,7 +1371,7 @@ you left one out. Proceed, with fingers crossed.
 ! Misplaced \cr.
 \math@cr@@@ ->\cr 
                   
-l.1406 \end{align*}
+l.1430 \end{align*}
                    
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1381,7 +1382,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \noalign.
 \math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
                                                   {\vskip #1\relax }
-l.1406 \end{align*}
+l.1430 \end{align*}
                    
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1389,7 +1390,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1406 \end{align*}
+l.1430 \end{align*}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1397,7 +1398,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1406 \end{align*}
+l.1430 \end{align*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1408,7 +1409,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \math@cr@@ ...th@cr@@@ \noalign {\vskip #1\relax }
                                                   
-l.1406 \end{align*}
+l.1430 \end{align*}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1419,7 +1420,7 @@ deleted material, e.g., by typing `I$}'.
 ! Misplaced \noalign.
 \black@ #1->\noalign 
                      {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
-l.1406 \end{align*}
+l.1430 \end{align*}
                    
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1427,7 +1428,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra }, or forgotten \endgroup.
 \endalign ->\math@cr \black@ \totwidth@ \egroup 
                                                 \ifingather@ \restorealignst...
-l.1406 \end{align*}
+l.1430 \end{align*}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1438,7 +1439,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1406 \end{align*}
+l.1430 \end{align*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1449,13 +1450,13 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.1406 \end{align*}
+l.1430 \end{align*}
                    
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-[24]
-Overfull \hbox (69.8494pt too wide) in paragraph at lines 1438--1439
+
+Overfull \hbox (69.8494pt too wide) in paragraph at lines 1462--1463
 []\OT1/cmr/m/n/10 See e.g. chap-ter 6 of Jiao Tao's dis-ser-ta-tion - http://tw
 .rpi.edu/web/doc/JiaoTaoDissertation
  []
@@ -1464,7 +1465,7 @@ Overfull \hbox (69.8494pt too wide) in paragraph at lines 1438--1439
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [25] (C:\Daten\Git\rdf-validation-research\paper\paper2.aux) ) 
+) [25] [26] (C:\Daten\Git\rdf-validation-research\paper\paper2.aux) ) 
 Here is how much of TeX's memory you used:
  13997 strings out of 493921
  264315 string characters out of 3147262
@@ -1473,24 +1474,24 @@ Here is how much of TeX's memory you used:
  16692 words of font info for 60 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  55i,9n,76p,729b,699s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Thom
-as Bosch\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\mathb10
-.pk> <C:\Users\Thomas Bosch\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mat
-habx\dpi600\matha10.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on paper2.pdf (25 pages, 247278 bytes).
+ <C:\Users
+\Thomas Bosch\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\ma
+thb10.pk> <C:\Users\Thomas Bosch\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\publi
+c\mathabx\dpi600\matha10.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
+t10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on paper2.pdf (26 pages, 249113 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
+ 156 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
