@@ -505,6 +505,7 @@ constraints (OWL 2 DL) [turtle syntax]:
         owl:onDatatype xsd:string ;
         owl:withRestrictions ( 
             [ xsd:pattern "[0-9]{3}-[0-9]{2}-[0-9]{4}" ] ) ] .
+:hasSSN rdfs:range :SSN .
 \end{ex}
 
 \begin{itemize}
@@ -520,14 +521,14 @@ for example, it is used in the third axiom to define the range of the :hasSSN pr
 valid data (OWL 2 DL):
 
 \begin{ex}
-:IimBernersLee
+:TimBernersLee
     :hasSSN "123-45-6789"^^:SSN .
 \end{ex}
 
 invalid data (OWL 2 DL):
 
 \begin{ex}
-:IimBernersLee
+:TimBernersLee
     :hasSSN "123456789"^^:SSN .
 \end{ex}
 
@@ -689,6 +690,8 @@ requirements:
 
 \subsubsection{R-45-RANGES-OF-RDF-LITERAL-VALUES}
 
+covering approaches: DQTP, OWL 2 DL, SPARQL, SPIN
+
 constraints (OWL 2 DL) [description logics abstract syntax]:
 
 \begin{ex}
@@ -719,6 +722,7 @@ constraints (OWL 2 DL) [turtle syntax]:
         owl:withRestrictions ( 
             [ xsd:minInclusive "1"^^xsd:nonNegativeInteger ]
             [ xsd:maxInclusive "23"^^xsd:nonNegativeInteger ] ) ] .
+:position rdfs:range :NumberPlayersPerWorldCupTeam .
 \end{ex}
 
 The data range 'NumberPlayersPerWorldCupTeam' contains the non negative integers 1 to 23, as each world cup team can only have 23 football players at most.

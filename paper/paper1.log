@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  3 OCT 2014 11:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  4 OCT 2014 12:53
 entering extended mode
 **paper1.tex
 (C:\Daten\Git\rdf-validation-research\paper\paper1.tex
@@ -1258,102 +1258,108 @@ Overfull \hbox (11.84708pt too wide) in paragraph at lines 478--479
  []
 
 [7]
-Overfull \hbox (24.62442pt too wide) in paragraph at lines 536--537
+Overfull \hbox (24.62442pt too wide) in paragraph at lines 537--538
  \OT1/cmr/bx/n/10 5.5.2 R-141-NEGATIVE-PATTERN-MATCHING-ON-RDF-LITERALS[]
  []
 
 [8] [9]
-Overfull \hbox (16.15224pt too wide) in paragraph at lines 666--666
+Overfull \hbox (16.15224pt too wide) in paragraph at lines 667--667
  \OT1/cmr/bx/n/10 5.6.4 R-194-PROVIDE-STRING-FUNCTIONS-FOR-RDF-LITERALS[] 
  []
 
 
-Overfull \hbox (26.26501pt too wide) in paragraph at lines 672--673
+Overfull \hbox (26.26501pt too wide) in paragraph at lines 673--674
 \OT1/cmr/m/n/10 XSD con-strain-ing facets: $http : / / www . w3 . org / TR / 20
 01 / REC-[]xmlschema-[]2-[]20010502 /
  []
 
+
+Overfull \hbox (10.88898pt too wide) in paragraph at lines 693--694
+ \OT1/cmr/bx/n/10 5.7.2 R-45-RANGES-OF-RDF-LITERAL-VALUES[] \OT1/cmr/m/n/10 cov
+-er-ing ap-proaches:
+ []
+
 [10]
-Overfull \hbox (14.63835pt too wide) in paragraph at lines 752--753
+Overfull \hbox (14.63835pt too wide) in paragraph at lines 756--757
  \OT1/cmr/bx/n/10 5.8.1 R-49-RDF-LITERALS-HAVING-AT-MOST-ONE-LANGUAGE-
  []
 
 [11] [12]
-Overfull \hbox (40.84836pt too wide) in paragraph at lines 890--891
+Overfull \hbox (40.84836pt too wide) in paragraph at lines 894--895
 []\OT1/cmr/m/n/10 actions on RDF lists: $http : / / www . snee . com / bobdc . 
 blog / 2014 / 04 / rdf-[]lists-[]and-[]sparql .
  []
 
 [13]
-Overfull \hbox (46.19652pt too wide) in paragraph at lines 961--962
+Overfull \hbox (46.19652pt too wide) in paragraph at lines 965--966
 []\OT1/cmr/m/n/10 R-156-REFERENCES-TO-TRIPLES-CAUSING-THE-CONSTRAINT-VIOLATIONS
  
  []
 
 
-Overfull \hbox (14.66864pt too wide) in paragraph at lines 962--963
+Overfull \hbox (14.66864pt too wide) in paragraph at lines 966--967
 []\OT1/cmr/m/n/10 R-157-REFERENCES-TO-VALIDATION-RULES-CAUSING-CONSTRAINT-
  []
 
 
-Overfull \hbox (161.96768pt too wide) in paragraph at lines 991--1032
+Overfull \hbox (161.96768pt too wide) in paragraph at lines 995--1036
  [][] 
  []
 
 [14]
-Overfull \hbox (241.8045pt too wide) in paragraph at lines 1038--1090
+Overfull \hbox (241.8045pt too wide) in paragraph at lines 1042--1094
  [][] 
  []
 
 
-Overfull \hbox (231.03313pt too wide) in paragraph at lines 1167--1223
+Overfull \hbox (231.03313pt too wide) in paragraph at lines 1171--1227
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 41.0617pt on input line 1223.
+LaTeX Warning: Float too large for page by 41.0617pt on input line 1227.
 
 
-Overfull \hbox (295.1778pt too wide) in paragraph at lines 1229--1247
+Overfull \hbox (295.1778pt too wide) in paragraph at lines 1233--1251
  [][] 
  []
 
 
-Overfull \hbox (255.10646pt too wide) in paragraph at lines 1253--1311
+Overfull \hbox (255.10646pt too wide) in paragraph at lines 1257--1315
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 63.0617pt on input line 1311.
+LaTeX Warning: Float too large for page by 63.0617pt on input line 1315.
 
 
-Overfull \hbox (223.16507pt too wide) in paragraph at lines 1317--1365
+Overfull \hbox (223.16507pt too wide) in paragraph at lines 1321--1369
  [][] 
  []
 
 
-Overfull \hbox (228.89972pt too wide) in paragraph at lines 1371--1399
+Overfull \hbox (228.89972pt too wide) in paragraph at lines 1375--1403
  [][] 
  []
 
 
-Overfull \hbox (360.79106pt too wide) in paragraph at lines 1405--1525
+Overfull \hbox (360.79106pt too wide) in paragraph at lines 1409--1529
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 745.0617pt on input line 1525.
+LaTeX Warning: Float too large for page by 745.0617pt on input line 1529.
 
 
-Overfull \hbox (360.79106pt too wide) in paragraph at lines 1531--1651
+Overfull \hbox (360.79106pt too wide) in paragraph at lines 1535--1655
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 745.0617pt on input line 1651.
+LaTeX Warning: Float too large for page by 745.0617pt on input line 1655.
 
 
-Overfull \hbox (0.29376pt too wide) in paragraph at lines 1664--1665
+Overfull \hbox (0.29376pt too wide) in paragraph at lines 1668--1669
 []\OT1/cmr/m/n/10 ShEx as an in-stan-ti-a-tion of con-straint lan-guages which 
 are high-level, human-
  []
@@ -1362,13 +1368,13 @@ are high-level, human-
 LaTeX Warning: Marginpar on page 15 moved.
 
 [15] [16] [17] [18] [19] [20] [21] [22] [23] [24]
-Overfull \hbox (8.37709pt too wide) in paragraph at lines 1723--1724
+Overfull \hbox (8.37709pt too wide) in paragraph at lines 1727--1728
 []\OT1/cmr/m/n/10 assertions: Dif-fer-entIn-di-vid-u-als, Clas-sAs-ser-tion, Ob
 -ject-Prop-ertyAsser-tion, and
  []
 
 
-Overfull \hbox (2.32169pt too wide) in paragraph at lines 1734--1735
+Overfull \hbox (2.32169pt too wide) in paragraph at lines 1738--1739
 \OT1/cmr/m/n/10 jectEx-act-Car-di-nal-ity, Data-Max-Car-di-nal-ity, DataM-in-Ca
 r-di-nal-ity, DataEx-act-
  []
@@ -1382,7 +1388,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  14131 strings out of 493921
  266421 string characters out of 3147262
- 405905 words of memory out of 3000000
+ 406905 words of memory out of 3000000
  17109 multiletter control sequences out of 15000+200000
  17037 words of font info for 61 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1400,7 +1406,7 @@ m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmtt9.pfb>
-Output written on paper1.pdf (25 pages, 250743 bytes).
+Output written on paper1.pdf (25 pages, 250832 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
