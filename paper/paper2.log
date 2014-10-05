@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  4 OCT 2014 10:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  5 OCT 2014 15:46
 entering extended mode
 **paper2.tex
 (C:\Daten\Git\rdf-validation-research\paper\paper2.tex
@@ -1461,35 +1461,35 @@ Overfull \hbox (69.8494pt too wide) in paragraph at lines 1462--1463
 .rpi.edu/web/doc/JiaoTaoDissertation
  []
 
-(C:\Daten\Git\rdf-validation-research\paper\paper2.bbl
+[25] (C:\Daten\Git\rdf-validation-research\paper\paper2.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [25] [26] (C:\Daten\Git\rdf-validation-research\paper\paper2.aux) ) 
+) [26] (C:\Daten\Git\rdf-validation-research\paper\paper2.aux) ) 
 Here is how much of TeX's memory you used:
- 13997 strings out of 493921
- 264315 string characters out of 3147262
+ 13998 strings out of 493921
+ 264333 string characters out of 3147262
  304959 words of memory out of 3000000
- 16987 multiletter control sequences out of 15000+200000
+ 16988 multiletter control sequences out of 15000+200000
  16692 words of font info for 60 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  55i,9n,76p,729b,699s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users
-\Thomas Bosch\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\ma
-thb10.pk> <C:\Users\Thomas Bosch\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\publi
-c\mathabx\dpi600\matha10.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
-t10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on paper2.pdf (26 pages, 249113 bytes).
+ <C:\Users\Thom
+as Bosch\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\mathb10
+.pk> <C:\Users\Thomas Bosch\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mat
+habx\dpi600\matha10.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
+12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on paper2.pdf (26 pages, 249600 bytes).
 PDF statistics:
  156 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
