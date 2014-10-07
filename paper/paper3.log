@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  7 OCT 2014 19:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.2)  7 OCT 2014 19:14
 entering extended mode
-**paper1.tex
-(C:\Daten\Git\rdf-validation-research\paper\paper1.tex
+**paper3.tex
+(C:\Daten\Git\rdf-validation-research\paper\paper3.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -1141,14 +1141,7 @@ LaTeX Info: Redefining \addtolength on input line 77.
 )
 \c@@todonotes@numberoftodonotes=\count166
 )
-(C:\Daten\Git\rdf-validation-research\paper\paper1.aux
-
-LaTeX Warning: Label `tab:RequirementsCoveredOWL2QL' multiply defined.
-
-
-LaTeX Warning: Label `tab:RequirementsCoveredShEx' multiply defined.
-
-)
+(C:\Daten\Git\rdf-validation-research\paper\paper3.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
 LaTeX Font Info:    ... okay on input line 69.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
@@ -1161,7 +1154,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
 LaTeX Font Info:    ... okay on input line 69.
 LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 69.
 LaTeX Font Info:    ... okay on input line 69.
- ABD: EveryShipout initializing macros
+
+ABD: EveryShipout initializing macros
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count167
@@ -1184,232 +1178,35 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 91.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (1.26477pt too wide) in paragraph at lines 130--131
-\OT1/cmr/m/n/10 liegen-den On-tolo-gie bzw. des darin ver-wen-de-ten OWL 2 Pro-
-fils das entsprechende
- []
+) [1
 
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
+(C:\Daten\Git\rdf-validation-research\paper\paper3.bbl
 
-Overfull \hbox (0.82713pt too wide) in paragraph at lines 132--135
-[]\OT1/cmr/m/n/10 Wie allerd-ings bspw. in $https : / / www . uni-[]ulm . de / 
-leadmin / website[]uni[]ulm /
- []
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-
-Overfull \hbox (12.46338pt too wide) in paragraph at lines 132--135
-\OT1/cmr/m/n/10 iui . inst . 090 / Lehre / WS[]2011-[]2012 / SemWebGrundlagen /
- LectureNotes . pdf$ auf Seite
- []
-
-[1
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (0.52162pt too wide) in paragraph at lines 136--138
-[]\OT1/cmr/m/n/10 Allerding ware wie bspw. in $http : / / www . aifb . kit . e
-du / images / d / d2 / 2005[]925[]
- []
-
-
-Overfull \hbox (6.09372pt too wide) in paragraph at lines 136--138
-\OT1/cmr/m/n/10 Haase[]Consistent[]Evol[]1 . pdf$ beschrieben auch eine so-ge-n
-an-nte 'User-defined Con-
- []
-
-[2]
-Overfull \hbox (13.97115pt too wide) in paragraph at lines 212--213
- \OT1/cmr/bx/n/10 5.1.2 Class-Specific Dis-joint Ob-ject Prop-er-ties[] \OT1/cm
-r/m/n/10 R-12-DISJOINT-OBJECT-
- []
-
-
-Overfull \hbox (19.82523pt too wide) in paragraph at lines 220--221
- \OT1/cmr/bx/n/10 5.1.3 Class-Specific Dis-joint Group of Prop-er-ties[] \OT1/c
-mr/m/n/10 R-13-DISJOINT-GROUP-
- []
-
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 229.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
-File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 229.
- [3] [4] [5]
-Overfull \hbox (30.43268pt too wide) in paragraph at lines 410--411
-[]\OT1/cmr/m/n/10 R-32-MEMBERSHIP-OF-RDF-OBJECTS-IN-CONTROLLED-VOCABULARIES 
- []
-
-
-Overfull \hbox (34.18266pt too wide) in paragraph at lines 411--412
-[]\OT1/cmr/m/n/10 R-39-MEMBERSHIP-OF-RDF-LITERALS-IN-CONTROLLED-VOCABULARIES 
- []
-
-
-Overfull \hbox (17.26288pt too wide) in paragraph at lines 429--437
-\OT1/cmr/m/n/10 and as \OT1/cmtt/m/n/10 dsp:VocabularyEncodingScheme\OT1/cmr/m/
-n/10 s in DSP. \OT1/cmtt/m/n/10 dsp:VocabularyEncodingScheme
- []
-
-[6]
-Overfull \hbox (11.84708pt too wide) in paragraph at lines 485--486
- \OT1/cmr/bx/n/10 5.5.1 R-44-PATTERN-MATCHING-ON-RDF-LITERALS[] \OT1/cmr/m/n/10
- Cov-er-ing ap-
- []
-
-[7]
-Overfull \hbox (24.62442pt too wide) in paragraph at lines 544--545
- \OT1/cmr/bx/n/10 5.5.2 R-141-NEGATIVE-PATTERN-MATCHING-ON-RDF-LITERALS[]
- []
-
-[8] [9]
-Overfull \hbox (16.15224pt too wide) in paragraph at lines 674--674
- \OT1/cmr/bx/n/10 5.6.4 R-194-PROVIDE-STRING-FUNCTIONS-FOR-RDF-LITERALS[] 
- []
-
-
-Overfull \hbox (26.26501pt too wide) in paragraph at lines 680--681
-\OT1/cmr/m/n/10 XSD con-strain-ing facets: $http : / / www . w3 . org / TR / 20
-01 / REC-[]xmlschema-[]2-[]20010502 /
- []
-
-[10]
-Overfull \hbox (10.88898pt too wide) in paragraph at lines 700--701
- \OT1/cmr/bx/n/10 5.7.2 R-45-RANGES-OF-RDF-LITERAL-VALUES[] \OT1/cmr/m/n/10 cov
--er-ing ap-proaches:
- []
-
-
-Overfull \hbox (14.63835pt too wide) in paragraph at lines 763--764
- \OT1/cmr/bx/n/10 5.8.1 R-49-RDF-LITERALS-HAVING-AT-MOST-ONE-LANGUAGE-
- []
-
-[11] [12] [13]
-Overfull \hbox (40.84836pt too wide) in paragraph at lines 901--902
-[]\OT1/cmr/m/n/10 actions on RDF lists: $http : / / www . snee . com / bobdc . 
-blog / 2014 / 04 / rdf-[]lists-[]and-[]sparql .
- []
-
-[14]
-Overfull \hbox (46.19652pt too wide) in paragraph at lines 972--973
-[]\OT1/cmr/m/n/10 R-156-REFERENCES-TO-TRIPLES-CAUSING-THE-CONSTRAINT-VIOLATIONS
- 
- []
-
-
-Overfull \hbox (14.66864pt too wide) in paragraph at lines 973--974
-[]\OT1/cmr/m/n/10 R-157-REFERENCES-TO-VALIDATION-RULES-CAUSING-CONSTRAINT-
- []
-
-
-Overfull \hbox (161.96768pt too wide) in paragraph at lines 1002--1043
- [][] 
- []
-
-
-Overfull \hbox (241.8045pt too wide) in paragraph at lines 1049--1101
- [][] 
- []
-
-
-Overfull \hbox (231.03313pt too wide) in paragraph at lines 1178--1234
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 41.0617pt on input line 1234.
-
-
-Overfull \hbox (295.1778pt too wide) in paragraph at lines 1240--1258
- [][] 
- []
-
-
-Overfull \hbox (255.10646pt too wide) in paragraph at lines 1264--1322
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 63.0617pt on input line 1322.
-
-
-Overfull \hbox (223.16507pt too wide) in paragraph at lines 1328--1376
- [][] 
- []
-
-
-Overfull \hbox (228.89972pt too wide) in paragraph at lines 1382--1410
- [][] 
- []
-
-
-Overfull \hbox (360.79106pt too wide) in paragraph at lines 1416--1536
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 745.0617pt on input line 1536.
-
-
-Overfull \hbox (360.79106pt too wide) in paragraph at lines 1542--1662
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 745.0617pt on input line 1662.
-
-
-Overfull \hbox (0.29376pt too wide) in paragraph at lines 1675--1676
-[]\OT1/cmr/m/n/10 ShEx as an in-stan-ti-a-tion of con-straint lan-guages which 
-are high-level, human-
- []
-
-[15] [16] [17] [18]
-
-LaTeX Warning: Marginpar on page 19 moved.
-
-[19] [20] [21] [22] [23] [24]
-Overfull \hbox (8.37709pt too wide) in paragraph at lines 1734--1735
-[]\OT1/cmr/m/n/10 assertions: Dif-fer-entIn-di-vid-u-als, Clas-sAs-ser-tion, Ob
--ject-Prop-ertyAsser-tion, and
- []
-
-
-Overfull \hbox (2.32169pt too wide) in paragraph at lines 1745--1746
-\OT1/cmr/m/n/10 jectEx-act-Car-di-nal-ity, Data-Max-Car-di-nal-ity, DataM-in-Ca
-r-di-nal-ity, DataEx-act-
- []
-
-(C:\Daten\Git\rdf-validation-research\paper\paper1.bbl) [25]
-(C:\Daten\Git\rdf-validation-research\paper\paper1.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+) [4] (C:\Daten\Git\rdf-validation-research\paper\paper3.aux) ) 
 Here is how much of TeX's memory you used:
- 14131 strings out of 493921
- 266421 string characters out of 3147262
- 394063 words of memory out of 3000000
- 17109 multiletter control sequences out of 15000+200000
- 17037 words of font info for 61 fonts, out of 3000000 for 9000
+ 14019 strings out of 493921
+ 263971 string characters out of 3147262
+ 303231 words of memory out of 3000000
+ 17002 multiletter control sequences out of 15000+200000
+ 16524 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 55i,9n,76p,870b,699s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmtt9.pfb>
-Output written on paper1.pdf (25 pages, 251420 bytes).
+ 55i,6n,54p,476b,300s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on paper3.pdf (4 pages, 122886 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

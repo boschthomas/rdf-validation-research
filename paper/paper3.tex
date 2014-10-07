@@ -125,6 +125,194 @@ So, the user does not have to know how to express constraints using a constraint
 
 And if there is a new constraint not covered by any constraint language you can just define the SPIN mapping for this constraint.
 
+\section{XX}
+
+ontology describing constraint languages
+interoperability between constraint languages
+express constraint in CL A and translate constraint in CL B
+provide SPARQL validation (SPIN mapping) for each general C 
+
+\section{constraint language ontology} 
+
+
+
+\section{examples}
+
+\subsection{min cardinality}
+
+OWL 2:
+\begin{ex}
+foaf:Person
+    a owl:Restriction ;
+		owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+		owl:onProperty :hasName ;
+		owl:onClass xsd:string .
+\end{ex}
+
+general constraint: min cardinality
+constraint (OWL2): data min cardinality
+
+
+translation to SPARQL:
+\begin{ex}
+
+\end{ex}
+
+\subsection{object property range}
+
+DSCL constraint (OWL 2):
+\begin{ex}
+:hasDog rdfs:range :Dog . 
+\end{ex}
+
+DSCL constraint (DSP):
+\begin{ex}
+:hasDogRange
+        a dsp:DescriptionTemplate ; 
+        dsp:resourceClass owl:Thing ; 
+        dsp:statementTemplate [
+            a dsp:NonLiteralStatementTemplate ;
+            dsp:property :hasDog ; 
+            dsp:nonLiteralConstraint [ 
+                a dsp:NonLiteralConstraint ;
+                dsp:valueClass :Dog ] ] .
+\end{ex}
+
+general constraint:
+\begin{ex}
+clo:objectPropertRange
+    a clo:GeneralConstraint ;
+		clo:requirement clo:R-28-OBJECT-PROPERTY-RANGE ;
+		clo:DSCLConstraints ( clo:objectPropertRange_OWL2 clo:objectPropertRange_DSP ) ;
+		clo:objectProperty :hasDog ;
+		clo:range ( :Dog ) ;
+\end{ex}
+
+valid data:
+\begin{ex}
+:Peter 
+    :hasDog :Brian .
+:Brian 
+    a :Dog ;     
+    a owl:Thing . 
+\end{ex}
+
+invalid data:
+\begin{ex}
+:Peter 
+    :hasDog :Brian .
+:Brian 
+#   a :Dog ; # commented --> constraint violation
+    a owl:Thing . 
+\end{ex}
+
+general constraint: object property range
+constraint (OWL2): object property range
+
+general C is translated to SPARQL for automatic validation
+
+for each DSCL constraint you have to define the binding to the general constraint.
+
+binding (DSCL constraint (OWL2) - general constraint):
+\begin{ex}
+# OWL 2 constraint
+# -----
+?OPE rdfs:range ?CE .
+
+clo:objectProperty => ?OPE
+clo:range => ?CE 
+\end{ex}
+
+binding (DSCL constraint (OWL2) - general constraint):
+\begin{ex}
+# DSP constraint
+# -----
+:hasDogRange
+        a dsp:DescriptionTemplate ; 
+        dsp:resourceClass owl:Thing ; 
+        dsp:statementTemplate [
+            a dsp:NonLiteralStatementTemplate ;
+            dsp:property :hasDog ; 
+            dsp:nonLiteralConstraint [ 
+                a dsp:NonLiteralConstraint ;
+                dsp:valueClass :Dog ] ] .
+								
+# SPIN
+# -----
+?descriptionTemplate a dsp:DescriptionTemplate .
+?descriptionTemplate dsp:resourceClass ?resourceClass .
+?descriptionTemplate dsp:statementTemplate ?statementTemplate .
+?statementTemplate dsp:property ?property .
+?statementTemplate dsp:nonLiteralConstraint ?nonLiteralConstraint .
+?nonLiteralConstraint dsp:valueClass ?valueClass .				
+FILTER EXISTS { ?nonLiteralConstraint dsp:valueClass ?valueClass . }
+FILTER NOT EXISTS { ?object a ?valueClass . ?nonLiteralConstraint dsp:valueClass ?valueClass . }
+								
+# binding (DSCL constraint (OWL2) - general constraint)
+# -----
+clo:objectProperty => ?OPE
+clo:range => ?CE 
+\end{ex}
+
+binding using SPIN
+
+SPARQL (validation of general constraint):
+\begin{ex}
+?x ?clo:objectProperty ?this .
+?this rdf:type owl:Thing . 
+FILTER NOT EXISTS { ?this a ?clo:range } .
+\end{ex}
+
+SPARQL (validation of DSCL constraint (OWL2)):
+\begin{ex}
+# constraint
+# -----
+?OPE rdfs:range ?CE .
+
+# data 
+# ----- 
+?x ?OPE ?this .
+?this rdf:type owl:Thing . 
+FILTER NOT EXISTS { ?this rdf:type ?CE } .
+\end{ex}
+
+SPARQL (validation of DSCL constraint (DSP)):
+\begin{ex}
+# data 
+# -----
+?this a ?resourceClass .
+?this ?property ?object .
+FILTER ( ?property != rdf:type ) .
+
+# constraint
+# -----
+?descriptionTemplate a dsp:DescriptionTemplate .
+?descriptionTemplate dsp:resourceClass ?resourceClass .
+?descriptionTemplate dsp:statementTemplate ?statementTemplate .
+?statementTemplate dsp:property ?property .
+?statementTemplate dsp:nonLiteralConstraint ?nonLiteralConstraint .
+?nonLiteralConstraint dsp:valueClass ?valueClass .				
+FILTER EXISTS { ?nonLiteralConstraint dsp:valueClass ?valueClass . }
+FILTER NOT EXISTS { ?object a ?valueClass . ?nonLiteralConstraint dsp:valueClass ?valueClass . }
+\end{ex}
+
+ontology design pattern.org
+constraint grammar
+constraint elements are the same
+DSP uses other design pattern / 
+constraint / constraint elements / constraint design patterns / constraint language
+define terminology
+related to requirements DB / relate requirements to constraints, constraint languages
+constraint element: e.g. min cardinality
+dependency between requirements / when this requirements is fulfilled then this is also fulfilled (e.g. min card and requ. car)
+min car more powerful than req. propery
+why ontology? automatic translation from DSP to OWL 
+define general constraint language
+we do not invent a new constraint languages
+requirements in SPARQL umsetzten
+only one validation for each requirement
+constraints may be composed 
+
 \bibliography{literatur}{}
 \bibliographystyle{plain}
 \setcounter{tocdepth}{1}
